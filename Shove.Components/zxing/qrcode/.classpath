@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="D:/Install/DevTools/Java/jar/dom4j-1.6.1.jar" sourcepath="C:/Users/Administrator/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Install/DevTools/Java/jar/c3p0-0.9.1.2.jar" sourcepath="C:/Users/Administrator/.m2/repository/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Install/DevTools/Java/jar/sqljdbc4.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Install/DevTools/Java/jar/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Install/DevTools/Java/jar/jaxen-1.1-beta-6.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Install/DevTools/Java/jar/sqlitejdbc-v056.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Install/DevTools/Java/jar/oracle_jdbc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

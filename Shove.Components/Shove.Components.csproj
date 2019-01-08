@@ -1,0 +1,3106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB304EEB-EA2B-4D26-B688-6595B4AFE262}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shove</RootNamespace>
+    <AssemblyName>Shove.Components</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SQLITE_DEBUG TRUE WIN32 _MSC_VER NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_ENABLE_STAT2 SQLITE_HAS_CODEC SQLITE_MUTEX_W32 SQLITE_THREADSAFE SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_VIRTUALTABLE SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC VDBE_PROFILE_OFF </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;SQLITE_DEBUG TRUE WIN32 _MSC_VER NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_ENABLE_STAT2 SQLITE_HAS_CODEC SQLITE_MUTEX_W32 SQLITE_THREADSAFE SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_VIRTUALTABLE SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC VDBE_PROFILE_OFF </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Shove.Components.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Shove.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\Connector\MySQL\6.9.6\Authentication\AuthenticationManager.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Authentication\MySQLAuthenticationPlugin.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Authentication\NativePasswordPlugins.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Authentication\Sha256AuthenticationPlugin.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Authentication\WindowsAuthenticationPlugin.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\BulkLoader.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\CharSetMap.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\command.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\CommandBuilder.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\Cache.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\ContextString.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\LowResolutionStopwatch.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\MyNetworkStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\MySqlTokenizer.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\NamedPipeStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\NativeMethods.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\Platform.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\QueryNormalizer.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\SharedMemoryStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\StreamCreator.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\StringUtility.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\common\Version.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\CompressedStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Connection.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Crypt.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\dataadapter.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\datareader.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Driver.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Exception.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlCommand.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlConnection.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlConnectionStringBuilder.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlDataReader.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlDateTime.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlParameter.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlParameterCollection.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlTrace.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\extensions\NonRT\MySqlTransaction.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Field.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Installer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Database\Connector\MySQL\6.9.6\Interceptors\CommandInterceptor.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Interceptors\ExceptionInterceptor.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Interceptors\Interceptor.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\ISSchemaProvider.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Memcached\BinaryClient.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Memcached\Client.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Memcached\MemcachedException.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Memcached\TextClient.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlClientFactory.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlClientPermission.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlClientPermissionAttribute.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlConfiguration.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlConnectionStringBuilder.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MysqlDefs.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlError.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlHelper.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlPacket.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlPool.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlPoolManager.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlPromotableTransaction.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlScript.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlSecurityPermission.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\MySqlStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\NativeDriver.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\parameter.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\parameter_collection.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\PerformanceMonitor.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\PreparableStatement.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\ProcedureCache.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Database\Connector\MySQL\6.9.6\Replication\ReplicationConfiguration.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Replication\ReplicationManager.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Replication\ReplicationRoundRobinServerGroup.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Replication\ReplicationServer.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Replication\ReplicationServerGroup.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\ResultSet.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Schema.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\SchemaProvider.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Statement.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\StoredProcedure.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\SystemPerformanceMonitor.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\TableCache.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\TimedStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\TracingDriver.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\transaction.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MetaData.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlBinary.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlBit.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlByte.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlConversionException.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlDateTime.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlDecimal.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlDouble.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlGeometry.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlGuid.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlInt16.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlInt32.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlInt64.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlSingle.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlString.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlTime.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlUByte.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlUInt16.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlUInt32.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlUInt64.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\Types\MySqlValue.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\Adler32.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\Deflate.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\InfBlocks.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\InfCodes.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\Inflate.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\InfTree.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\StaticTree.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\SupportClass.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\Tree.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\ZInputStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\Zlib.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\ZOutputStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\ZStream.cs" />
+    <Compile Include="Database\Connector\MySQL\6.9.6\zlib\ZStreamException.cs" />
+    <Compile Include="EnterpriseDT.Net\net\BaseSocket.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\BandwidthThrottler.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\CustomFileParsers.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\DirectoryEmptyStrings.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FileNotFoundStrings.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FileTransferException.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPActiveDataSocket.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPClient.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPControlSocket.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPDataSocket.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPException.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPFile.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPFileFactory.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPFileParser.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPPassiveDataSocket.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPReply.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPSemaphore.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\FTPTypes.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\IFileTransferClient.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\IFTPComponent.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\OS400FileParser.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\ServerStrings.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\TandemFileParser.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\TransferCompleteStrings.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\UnixFileParser.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\VMSFileParser.cs" />
+    <Compile Include="EnterpriseDT.Net\net\ftp\WindowsFileParser.cs" />
+    <Compile Include="EnterpriseDT.Net\net\HostNameResolver.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\Appender.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\FileAppender.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\Level.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\Logger.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\LoggingLock.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\LogTag.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\MemoryAppender.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\RollingFileAppender.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\StandardOutputAppender.cs" />
+    <Compile Include="EnterpriseDT.Net\util\debug\TraceAppender.cs" />
+    <Compile Include="EnterpriseDT.Net\util\PathUtil.cs" />
+    <Compile Include="EnterpriseDT.Net\util\StringSplitter.cs" />
+    <Compile Include="EnterpriseDT.Net\util\VersionDetails.cs" />
+    <Compile Include="Excel\NPOI\Resource2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LitJson\IJsonWrapper.cs" />
+    <Compile Include="LitJson\JsonData.cs" />
+    <Compile Include="LitJson\JsonException.cs" />
+    <Compile Include="LitJson\JsonMapper.cs" />
+    <Compile Include="LitJson\JsonMockWrapper.cs" />
+    <Compile Include="LitJson\JsonReader.cs" />
+    <Compile Include="LitJson\JsonWriter.cs" />
+    <Compile Include="LitJson\Lexer.cs" />
+    <Compile Include="LitJson\ParserToken.cs" />
+    <Compile Include="zxing\BarcodeFormat.cs" />
+    <Compile Include="zxing\Binarizer.cs" />
+    <Compile Include="zxing\BinaryBitmap.cs" />
+    <Compile Include="zxing\client\result\AbstractDoCoMoResultParser.cs" />
+    <Compile Include="zxing\client\result\AddressBookAUResultParser.cs" />
+    <Compile Include="zxing\client\result\AddressBookDoCoMoResultParser.cs" />
+    <Compile Include="zxing\client\result\AddressBookParsedResult.cs" />
+    <Compile Include="zxing\client\result\BizcardResultParser.cs" />
+    <Compile Include="zxing\client\result\BookmarkDoCoMoResultParser.cs" />
+    <Compile Include="zxing\client\result\CalendarParsedResult.cs" />
+    <Compile Include="zxing\client\result\EmailAddressParsedResult.cs" />
+    <Compile Include="zxing\client\result\EmailAddressResultParser.cs" />
+    <Compile Include="zxing\client\result\EmailDoCoMoResultParser.cs" />
+    <Compile Include="zxing\client\result\GeoParsedResult.cs" />
+    <Compile Include="zxing\client\result\GeoResultParser.cs" />
+    <Compile Include="zxing\client\result\ISBNParsedResult.cs" />
+    <Compile Include="zxing\client\result\ISBNResultParser.cs" />
+    <Compile Include="zxing\client\result\optional\AbstractNDEFResultParser.cs" />
+    <Compile Include="zxing\client\result\optional\NDEFRecord.cs" />
+    <Compile Include="zxing\client\result\optional\NDEFSmartPosterParsedResult.cs" />
+    <Compile Include="zxing\client\result\optional\NDEFSmartPosterResultParser.cs" />
+    <Compile Include="zxing\client\result\optional\NDEFTextResultParser.cs" />
+    <Compile Include="zxing\client\result\optional\NDEFURIResultParser.cs" />
+    <Compile Include="zxing\client\result\ParsedResult.cs" />
+    <Compile Include="zxing\client\result\ParsedResultType.cs" />
+    <Compile Include="zxing\client\result\ProductParsedResult.cs" />
+    <Compile Include="zxing\client\result\ProductResultParser.cs" />
+    <Compile Include="zxing\client\result\ResultParser.cs" />
+    <Compile Include="zxing\client\result\SMSMMSResultParser.cs" />
+    <Compile Include="zxing\client\result\SMSParsedResult.cs" />
+    <Compile Include="zxing\client\result\TelParsedResult.cs" />
+    <Compile Include="zxing\client\result\TelResultParser.cs" />
+    <Compile Include="zxing\client\result\TextParsedResult.cs" />
+    <Compile Include="zxing\client\result\URIParsedResult.cs" />
+    <Compile Include="zxing\client\result\URIResultParser.cs" />
+    <Compile Include="zxing\client\result\URLTOResultParser.cs" />
+    <Compile Include="zxing\client\result\VCardResultParser.cs" />
+    <Compile Include="zxing\client\result\VEventResultParser.cs" />
+    <Compile Include="zxing\common\BitArray.cs" />
+    <Compile Include="zxing\common\BitMatrix.cs" />
+    <Compile Include="zxing\common\BitSource.cs" />
+    <Compile Include="zxing\common\ByteArray.cs" />
+    <Compile Include="zxing\common\ByteMatrix.cs" />
+    <Compile Include="zxing\common\CharacterSetECI.cs" />
+    <Compile Include="zxing\common\Collections.cs" />
+    <Compile Include="zxing\common\Comparator.cs" />
+    <Compile Include="zxing\common\DecoderResult.cs" />
+    <Compile Include="zxing\common\DefaultGridSampler.cs" />
+    <Compile Include="zxing\common\DetectorResult.cs" />
+    <Compile Include="zxing\common\detector\MonochromeRectangleDetector.cs" />
+    <Compile Include="zxing\common\ECI.cs" />
+    <Compile Include="zxing\common\GlobalHistogramBinarizer.cs" />
+    <Compile Include="zxing\common\GridSampler.cs" />
+    <Compile Include="zxing\common\HybridBinarizer.cs" />
+    <Compile Include="zxing\common\PerspectiveTransform.cs" />
+    <Compile Include="zxing\common\reedsolomon\GF256.cs" />
+    <Compile Include="zxing\common\reedsolomon\GF256Poly.cs" />
+    <Compile Include="zxing\common\reedsolomon\ReedSolomonDecoder.cs" />
+    <Compile Include="zxing\common\reedsolomon\ReedSolomonEncoder.cs" />
+    <Compile Include="zxing\common\reedsolomon\ReedSolomonException.cs" />
+    <Compile Include="zxing\datamatrix\DataMatrixReader.cs" />
+    <Compile Include="zxing\datamatrix\decoder\BitMatrixParser.cs" />
+    <Compile Include="zxing\datamatrix\decoder\DataBlock.cs" />
+    <Compile Include="zxing\datamatrix\decoder\DecodedBitStreamParser.cs" />
+    <Compile Include="zxing\datamatrix\decoder\Decoder.cs" />
+    <Compile Include="zxing\datamatrix\decoder\Version.cs" />
+    <Compile Include="zxing\datamatrix\detector\Detector.cs" />
+    <Compile Include="zxing\DecodeHintType.cs" />
+    <Compile Include="zxing\EncodeHintType.cs" />
+    <Compile Include="zxing\LuminanceSource.cs" />
+    <Compile Include="zxing\MultiFormatReader.cs" />
+    <Compile Include="zxing\MultiFormatWriter.cs" />
+    <Compile Include="zxing\multi\ByQuadrantReader.cs" />
+    <Compile Include="zxing\multi\GenericMultipleBarcodeReader.cs" />
+    <Compile Include="zxing\multi\MultipleBarcodeReader.cs" />
+    <Compile Include="zxing\multi\qrcode\detector\MultiDetector.cs" />
+    <Compile Include="zxing\multi\qrcode\detector\MultiFinderPatternFinder.cs" />
+    <Compile Include="zxing\multi\qrcode\QRCodeMultiReader.cs" />
+    <Compile Include="zxing\oned\Code128Reader.cs" />
+    <Compile Include="zxing\oned\Code39Reader.cs" />
+    <Compile Include="zxing\oned\Code39Writer.cs" />
+    <Compile Include="zxing\oned\EAN13Reader.cs" />
+    <Compile Include="zxing\oned\EAN13Writer.cs" />
+    <Compile Include="zxing\oned\EAN8Reader.cs" />
+    <Compile Include="zxing\oned\EAN8Writer.cs" />
+    <Compile Include="zxing\oned\ITFReader.cs" />
+    <Compile Include="zxing\oned\MultiFormatOneDReader.cs" />
+    <Compile Include="zxing\oned\MultiFormatUPCEANReader.cs" />
+    <Compile Include="zxing\oned\OneDReader.cs" />
+    <Compile Include="zxing\oned\UPCAReader.cs" />
+    <Compile Include="zxing\oned\UPCEANReader.cs" />
+    <Compile Include="zxing\oned\UPCEANWriter.cs" />
+    <Compile Include="zxing\oned\UPCEReader.cs" />
+    <Compile Include="zxing\pdf417\decoder\BitMatrixParser.cs" />
+    <Compile Include="zxing\pdf417\decoder\DecodedBitStreamParser.cs" />
+    <Compile Include="zxing\pdf417\decoder\Decoder.cs" />
+    <Compile Include="zxing\pdf417\detector\Detector.cs" />
+    <Compile Include="zxing\pdf417\PDF417Reader.cs" />
+    <Compile Include="zxing\qrcode\decoder\BitMatrixParser.cs" />
+    <Compile Include="zxing\qrcode\decoder\DataBlock.cs" />
+    <Compile Include="zxing\qrcode\decoder\DataMask.cs" />
+    <Compile Include="zxing\qrcode\decoder\DecodedBitStreamParser.cs" />
+    <Compile Include="zxing\qrcode\decoder\Decoder.cs" />
+    <Compile Include="zxing\qrcode\decoder\ErrorCorrectionLevel.cs" />
+    <Compile Include="zxing\qrcode\decoder\FormatInformation.cs" />
+    <Compile Include="zxing\qrcode\decoder\Mode.cs" />
+    <Compile Include="zxing\qrcode\decoder\Version.cs" />
+    <Compile Include="zxing\qrcode\detector\AlignmentPattern.cs" />
+    <Compile Include="zxing\qrcode\detector\AlignmentPatternFinder.cs" />
+    <Compile Include="zxing\qrcode\detector\Detector.cs" />
+    <Compile Include="zxing\qrcode\detector\FinderPattern.cs" />
+    <Compile Include="zxing\qrcode\detector\FinderPatternFinder.cs" />
+    <Compile Include="zxing\qrcode\detector\FinderPatternInfo.cs" />
+    <Compile Include="zxing\qrcode\encoder\BitVector.cs" />
+    <Compile Include="zxing\qrcode\encoder\BlockPair.cs" />
+    <Compile Include="zxing\qrcode\encoder\Encoder.cs" />
+    <Compile Include="zxing\qrcode\encoder\MaskUtil.cs" />
+    <Compile Include="zxing\qrcode\encoder\MatrixUtil.cs" />
+    <Compile Include="zxing\qrcode\encoder\QRCode.cs" />
+    <Compile Include="zxing\qrcode\QRCodeReader.cs" />
+    <Compile Include="zxing\qrcode\QRCodeWriter.cs" />
+    <Compile Include="zxing\Reader.cs" />
+    <Compile Include="zxing\ReaderException.cs" />
+    <Compile Include="zxing\Result.cs" />
+    <Compile Include="zxing\ResultMetadataType.cs" />
+    <Compile Include="zxing\ResultPoint.cs" />
+    <Compile Include="zxing\ResultPointCallback.cs" />
+    <Compile Include="zxing\RGBLuminanceSource.cs" />
+    <Compile Include="zxing\SupportClass.cs" />
+    <Compile Include="zxing\Writer.cs" />
+    <Compile Include="zxing\WriterException.cs" />
+    <Compile Include="Excel\NPOI\DDF\AbstractEscherOptRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\DefaultEscherRecordFactory.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherArrayProperty.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherBitmapBlip.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherBlipRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherBlipWMFRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherBoolProperty.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherBSERecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherChildAnchorRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherClientAnchorRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherClientDataRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherComplexProperty.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherContainerRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherDggRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherDgRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherDump.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherMetafileBlip.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherOptRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherPictBlip.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherProperties.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherProperty.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherPropertyFactory.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherPropertyMetaData.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherRecordFactory.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherRGBProperty.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherSerializationListener.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherShapePathProperty.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherSimpleProperty.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherSpgrRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherSplitMenuColorsRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherSpRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherTertiaryOptRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\EscherTextboxRecord.cs" />
+    <Compile Include="Excel\NPOI\DDF\NullEscherSerializationListener.cs" />
+    <Compile Include="Excel\NPOI\DDF\UnknownEscherRecord.cs" />
+    <Compile Include="Excel\NPOI\EncryptedDocumentException.cs" />
+    <Compile Include="Excel\NPOI\GlobalSuppressions.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Constants.cs" />
+    <Compile Include="Excel\NPOI\HPSF\CustomProperties.cs" />
+    <Compile Include="Excel\NPOI\HPSF\CustomProperty.cs" />
+    <Compile Include="Excel\NPOI\HPSF\DocumentSummaryInformation.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Extractor\HPSFPropertiesExtractor.cs" />
+    <Compile Include="Excel\NPOI\HPSF\HPSFException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\HPSFRuntimeException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\IllegalPropertySetDataException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\IllegalVariantTypeException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\MarkUnsupportedException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\MissingSectionException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\MutableProperty.cs" />
+    <Compile Include="Excel\NPOI\HPSF\MutablePropertySet.cs" />
+    <Compile Include="Excel\NPOI\HPSF\MutableSection.cs" />
+    <Compile Include="Excel\NPOI\HPSF\NoFormatIDException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\NoPropertySetStreamException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\NoSingleSectionException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Property.cs" />
+    <Compile Include="Excel\NPOI\HPSF\PropertySet.cs" />
+    <Compile Include="Excel\NPOI\HPSF\PropertySetFactory.cs" />
+    <Compile Include="Excel\NPOI\HPSF\ReadingNotSupportedException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Section.cs" />
+    <Compile Include="Excel\NPOI\HPSF\SpecialPropertySet.cs" />
+    <Compile Include="Excel\NPOI\HPSF\SummaryInformation.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Thumbnail.cs" />
+    <Compile Include="Excel\NPOI\HPSF\TypeWriter.cs" />
+    <Compile Include="Excel\NPOI\HPSF\UnexpectedPropertySetTypeException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\UnsupportedVariantTypeException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Util.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Variant.cs" />
+    <Compile Include="Excel\NPOI\HPSF\VariantSupport.cs" />
+    <Compile Include="Excel\NPOI\HPSF\VariantTypeException.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Wellknown\PropertyIDMap.cs" />
+    <Compile Include="Excel\NPOI\HPSF\Wellknown\SectionIDMap.cs" />
+    <Compile Include="Excel\NPOI\HPSF\WritingNotSupportedException.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventModel\ERFListener.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventModel\EventRecordFactory.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\AbortableHSSFListener.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\DummyRecord\DummyRecordBase.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\DummyRecord\LastCellOfRowDummyRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\DummyRecord\MissingCellDummyRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\DummyRecord\MissingRowDummyRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\EventWorkbookBuilder.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\FormatTrackingHSSFListener.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\HSSFEventFactory.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\HSSFListener.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\HSSFRecordStream.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\HSSFRequest.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\HSSFUserException.cs" />
+    <Compile Include="Excel\NPOI\HSSF\EventUserModel\MissingRecordAwareHSSFListener.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Extractor\EventBasedExcelExtractor.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Extractor\ExcelExtractor.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\AbstractShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\ComboboxShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\CommentShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\ConvertAnchor.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\DrawingManager.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\DrawingManager2.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\HSSFFormulaParser.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\InternalSheet.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\InternalWorkbook.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\LineShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\LinkTable.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\ParseNode.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\PictureShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\PolygonShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\RecordOrderer.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\RecordStream.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\RowBlocksReader.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\SimpleFilledShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\TextboxShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Model\WorkbookRecordList.cs" />
+    <Compile Include="Excel\NPOI\HSSF\OldExcelFormatException.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\AbstractEscherHolderRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\CFRecordsAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\ChartSubstreamRecordAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\ColumnInfoRecordsAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\ConditionalFormattingTable.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\CustomViewSettingsRecordAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\DataValidityTable.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\FormulaRecordAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\MergedCellsTable.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\PageSettingsBlock.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\PLSAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\RecordAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\RowRecordsAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\SharedValueManager.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\ValueRecordsAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Aggregates\WorksheetProtectionBlock.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ArrayRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\AutoFilter\AutoFilterInfoRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\AutoFilter\AutoFilterRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\AutoFilter\DOPER.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\AutoFilter\FilterModeRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BackupRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BiffHeaderInput.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BlankRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BOFRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BookBoolRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BoolErrRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BottomMarginRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\BoundSheetRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CalcCountRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CalcModeRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CellRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CellValueRecordInterface.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CFHeaderRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CFRuleRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CF\BorderFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CF\CellRangeUtil.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CF\FontFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CF\PatternFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\AreaFormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\AreaRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\AxisLineFormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\AxisOptionsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\AxisParentRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\AxisRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\AxisUsedRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\BarRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\BeginRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\CategorySeriesAxisRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\CatLabRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\Chart3DBarShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartEndBlockRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartEndObjectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartFormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartFRTInfoRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartStartBlockRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartStartObjectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ChartTitleFormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\CrtLinkRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\DataFormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\DataLabelExtensionRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\DatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\DefaultDataLabelTextPropertiesRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\EndRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\FontBasisRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\FontIndexRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\FrameRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\LegendRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\LineFormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\LinkedDataRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\NumberFormatIndexRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ObjectLinkRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\PlotAreaRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\PlotGrowthRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\PosRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SeriesChartGroupIndexRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SeriesIndexRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SeriesLabelsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SeriesListRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SeriesRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SeriesTextRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SeriesToChartGroupRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\SheetPropertiesRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\TextRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\TickRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\UnitsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Chart\ValueRangeRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CodepageRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ColumnInfoRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Common\FeatFormulaErr2.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Common\FeatProtection.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Common\FeatSmartTag.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Common\FtrHeader.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Common\SharedFeature.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ContinueRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Cont\ContinuableRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Cont\ContinuableRecordInput.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Cont\ContinuableRecordOutput.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Cont\UnknownLengthRecordOutput.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CountryRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CRNCountRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CRNRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Crypto\Biff8DecryptingStream.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Crypto\Biff8EncryptionKey.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Crypto\Biff8RC4.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Crypto\RC4.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\CustomField.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DateWindow1904Record.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DBCellRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DefaultColWidthRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DefaultRowHeightRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DeltaRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DimensionsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DrawingGroupRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DrawingRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DrawingRecordForBiffViewer.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DrawingSelectionRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DSFRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DVALRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\DVRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\EOFRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\EscherAggregate.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Excel9FileRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ExtendedFormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ExternalNameRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ExternSheetRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ExternSheetSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ExtSSTInfoSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ExtSSTRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FeatHdrRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FeatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FilePassRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FileSharingRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FnGroupCountRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FontRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FooterRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FormatRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FormulaRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\FtCblsSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\GridsetRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\GutsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\HCenterRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\HeaderFooterBase.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\HeaderFooterRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\HeaderRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\HideObjRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\HorizontalPageBreakRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\HyperlinkRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\IndexRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\InterfaceEndRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\InterfaceHdrRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\IterationRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\LabelRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\LabelSSTRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\LeftMarginRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\LinkedDataFormulaField.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Margin.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\MergeCellsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\MMSRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\MulBlankRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\MulRKRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\NameCommentRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\NameRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\NoteRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\NumberRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ObjectProtectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ObjRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PageBreakRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PaletteRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PaneRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PasswordRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PasswordRev4Record.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PivotTable\DataItemRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PivotTable\ExtendedPivotTableViewFieldsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PivotTable\PageItemRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PivotTable\StreamIDRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PivotTable\ViewDefinitionRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PivotTable\ViewFieldsRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PivotTable\ViewSourceRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PrecisionRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PrintGridlinesRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PrintHeadersRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PrintSetupRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\PrintSizeRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ProtectionRev4Record.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ProtectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RecalcIdRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\Record.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RecordBase.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RecordFactory.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RecordFactoryInputStream.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RecordInputStream.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RefModeRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RefreshAllRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RightMarginRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RKRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\RowRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SaveRecalcRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\ScenarioProtectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SCLRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SelectionRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SharedFormulaRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SharedValueRecordBase.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SheetExtRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SSTDeserializer.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SSTRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SSTSerializer.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\StandardRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\StringRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\StyleRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\CommonObjectDataSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\EmbeddedObjectRefSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\EndSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\GroupMarkerSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\LbsDataSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\NoteStructureSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\ScrollableObjectSubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SubRecord\SubRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\SupBookRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\TabIdRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\TableRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\TableStylesRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\TextObjectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\TopMarginRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\UncalcedRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\UnicodeString.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\UnknownRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\UserSViewBegin.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\UserSViewEnd.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\UseSelFSRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\VCenterRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\VerticalPageBreakRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\WindowOneRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\WindowProtectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\WindowTwoRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\WriteAccessRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\WriteProtectRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Record\WSBoolRecord.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\DVConstraint.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\EscherGraphics.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\EvaluationCycleDetector.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\EvaluationCycleDetectorManager.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\FontDetails.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HeaderFooter.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFAnchor.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFAutoFilter.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFBorderFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFCell.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFCellStyle.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFChart.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFChildAnchor.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFClientAnchor.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFComment.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFConditionalFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFConditionalFormattingRule.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFCreationHelper.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFDataFormat.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFDataFormatter.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFDataValidation.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFDataValidationHelper.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFDateUtil.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFErrorConstants.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFEvaluationCell.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFEvaluationSheet.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFEvaluationWorkbook.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFFont.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFFontFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFFooter.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFFormulaEvaluator.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFHeader.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFHyperlink.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFName.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFObjectData.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFOptimiser.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFPalette.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFPatriarch.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFPatternFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFPicture.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFPictureData.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFPolygon.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFPrintSetup.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFRichTextString.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFRow.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFShapeContainer.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFShapeGroup.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFSheet.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFSheetConditionalFormatting.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFSimpleShape.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFTextbox.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\HSSFWorkbook.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\OperationEvaluatorFactory.cs" />
+    <Compile Include="Excel\NPOI\HSSF\UserModel\StaticFontMetrics.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\GUID.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\HSSFCellRangeAddress.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\HSSFCellUtil.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\HSSFColor.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\HSSFRegionUtil.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\LazilyConcatenatedByteArray.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\RangeAddress.cs" />
+    <Compile Include="Excel\NPOI\HSSF\Util\RKUtil.cs" />
+    <Compile Include="Excel\NPOI\OldFileFormatException.cs" />
+    <Compile Include="Excel\NPOI\POIDocument.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Common\POIFSBigBlockSize.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Common\POIFSConstants.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Dev\POIFSLister.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Dev\POIFSViewable.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Dev\POIFSViewEngine.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Dev\POIFSViewer.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSReader.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSReaderEvent.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSReaderEventArgs.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSReaderListener.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSReaderRegistry.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSWriterEvent.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSWriterEventArgs.cs" />
+    <Compile Include="Excel\NPOI\POIFS\EventFileSystem\POIFSWriterListener.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\BATManaged.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\BlockStore.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\CloseIgnoringInputStream.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\DirectoryEntry.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\DirectoryNode.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\DocumentDescriptor.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\DocumentEntry.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\DocumentInputStream.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\DocumentNode.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\DocumentOutputStream.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\Entry.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\EntryNode.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\NDocumentInputStream.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\NPOIFSDocument.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\NPOIFSFileSystem.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\NPOIFSMiniStore.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\NPOIFSStream.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\ODocumentInputStream.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\OfficeXmlFileException.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\Ole10Native.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\Ole10NativeException.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\POIFSDocument.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\POIFSDocumentPath.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\POIFSDocumentReader.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\POIFSDocumentWriter.cs" />
+    <Compile Include="Excel\NPOI\POIFS\FileSystem\POIFSFileSystem.cs" />
+    <Compile Include="Excel\NPOI\POIFS\NIO\ByteArrayBackedDataSource.cs" />
+    <Compile Include="Excel\NPOI\POIFS\NIO\DataSource.cs" />
+    <Compile Include="Excel\NPOI\POIFS\NIO\FileBackedDataSource.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\Child.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\DirectoryProperty.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\DocumentProperty.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\NPropertyTable.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\Parent.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\Property.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\PropertyConstants.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\PropertyFactory.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\PropertyTable.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\PropertyTableBase.cs" />
+    <Compile Include="Excel\NPOI\POIFS\property\RootProperty.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\BATBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\BigBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\BlockAllocationTableReader.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\BlockAllocationTableWriter.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\BlockList.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\BlockListImpl.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\BlockWritable.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\DataInputBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\DocumentBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\HeaderBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\HeaderBlockConstants.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\HeaderBlockReader.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\HeaderBlockWriter.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\ListManagedBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\PropertyBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\RawDataBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\RawDataBlockList.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\SmallBlockTableReader.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\SmallBlockTableWriter.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\SmallDocumentBlock.cs" />
+    <Compile Include="Excel\NPOI\POIFS\Storage\SmallDocumentBlockList.cs" />
+    <Compile Include="Excel\NPOI\POIOLE2TextExtractor.cs" />
+    <Compile Include="Excel\NPOI\POITextExtractor.cs" />
+    <Compile Include="Excel\NPOI\POIUtils.cs" />
+    <Compile Include="Excel\NPOI\Resource1.Designer.cs" />
+    <Compile Include="Excel\NPOI\SS\Extractor\ExcelExtractor.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellDateFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellElapsedFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellFormat.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellFormatCondition.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellFormatPart.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellFormatResult.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellFormatType.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellGeneralFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellNumberFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\Format\CellTextFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Atp\AnalysisToolPak.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Atp\EDate.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Atp\MRound.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Atp\ParityFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Atp\RandBetween.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Atp\YearFrac.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Atp\YearFracCalculator.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\CellCacheEntry.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\CellEvaluationFrame.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\CollaboratingWorkbooksEnvironment.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Constant\ConstantValueParser.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Constant\ErrorConstant.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\EvaluationCache.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\EvaluationCell.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\EvaluationName.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\EvaluationSheet.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\EvaluationTracker.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\EvaluationWorkbook.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\AreaEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\AreaEvalBase.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\BlankEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\BoolEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\ConcatEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\ErrorEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\Eval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\EvaluationException.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\Forked\ForkedEvaluationCell.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\Forked\ForkedEvaluationSheet.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\Forked\ForkedEvaluationWorkbook.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\Forked\ForkedEvaluator.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\FunctionEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\IntersectionEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\MissingArgEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\NameEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\NameXEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\NumberEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\NumericOperationEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\NumericValueEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\OperandResolver.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\OperationEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\PercentEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RangeEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RefEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RefEvalBase.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RelationalOperationEval\EqualEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RelationalOperationEval\GreaterEqualEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RelationalOperationEval\GreaterThanEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RelationalOperationEval\LessEqualEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RelationalOperationEval\LessThanEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RelationalOperationEval\NotEqualEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\RelationalOperationEval\RelationalOperationEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\StringEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\StringOperationEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\StringValueEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\TwoOperandNumeric\AddEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\TwoOperandNumeric\DivideEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\TwoOperandNumeric\MultiplyEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\TwoOperandNumeric\PowerEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\TwoOperandNumeric\SubtractEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\TwoOperandNumeric\TwoOperandNumericOperation.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\UnaryMinusEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\UnaryPlusEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\ValueEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Eval\ValueEvalToNumericXlator.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\ExternSheetReferenceToken.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Formula.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaCellCache.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaCellCacheEntry.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaCellCacheEntrySet.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaParser.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaParsingWorkbook.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaRenderer.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaRenderingWorkbook.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaType.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\FormulaUsedBlankCellSet.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Address.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\AggregateFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Boolean\And.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Boolean\BooleanFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Boolean\False.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Boolean\Not.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Boolean\Or.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Boolean\True.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\CalendarFieldFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Ceiling.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Choose.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Column.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Columns.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Combin.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Count.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Counta.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Countblank.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Countif.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\CountUtils.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\DateFunc.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Days360.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Degrees.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Dollar.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Even.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Exp.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Fact.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\FinanceFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\FinanceLib.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Fixed0ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Fixed1ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Fixed2ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Fixed3ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Fixed4ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Floor.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\FreeRefFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Function.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Function0Arg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Function1Arg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Function2Arg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Function3Arg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Function4Arg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Fv.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Hlookup.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\If.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Index.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Indirect.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Int.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Irr.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Isblank.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Iserr.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Iserror.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Islogical.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Isna.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Isnontext.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Isnumber.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Isref.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\Istext.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Logical\LogicalFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Lookup.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\LookupUtils.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Match.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\MathX.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\MinaMaxa.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Mod.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Mode.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\MultiOperandNumericFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Na.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\NotImplementedFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Now.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Nper.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Npv.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Abs.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Acos.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Acosh.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Asin.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Asinh.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Atan.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Atan2.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Atanh.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Cos.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Cosh.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Ln.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Log.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Log10.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\NumericFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Pi.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Poisson.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Rand.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Round.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Rounddown.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Roundup.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Sin.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Sinh.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Sqrt.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Tan.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Tanh.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Numeric\Trunc.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Odd.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Offset.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Pmt.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Power.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Pv.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Radians.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Row.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Rows.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Sign.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\StatsLib.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Subtotal.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Sumif.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Sumproduct.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Sumx2my2.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Sumx2py2.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Sumxmy2.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\T.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\CHAR.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Clean.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Concatenate.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Exact.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\LeftRight.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Len.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Lower.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Mid.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Replace.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\SearchFind.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Substitute.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Text.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\TextFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Trim.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Text\Upper.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\TimeFunc.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Today.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Value.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Var1or2ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Var2or3ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Var3or4ArgFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\Vlookup.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Functions\XYNumericFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Function\FunctionDataBuilder.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Function\FunctionMetadata.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Function\FunctionMetadataReader.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Function\FunctionMetadataRegistry.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\IEvaluationListener.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\IStabilityClassifier.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\LazyAreaEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\LazyRefEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\OperandClassTransformer.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\OperationEvaluationContext.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\OperationEvaluatorFactory.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\ParseNode.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PlainCellCache.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PlainValueCellCacheEntry.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AbstractFunctionPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AddPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\Area2DPtgBase.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\Area3DPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AreaErrPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AreaI.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AreaNPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AreaPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AreaPtgBase.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ArrayPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\AttrPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\BoolPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ConcatPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ControlPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\DeletedArea3DPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\DeletedRef3DPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\DividePtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\EqualPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ErrPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ExpPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ExternSheetNameResolver.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\FormulaShifter.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\FuncPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\FuncVarPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\GreaterEqualPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\GreaterThanPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\IntersectionPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\IntPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\LessEqualPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\LessThanPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\MemAreaPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\MemErrPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\MemFuncPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\MissingArgPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\MultiplyPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\NamePtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\NameXPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\NotEqualPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\NumberPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\OperandPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\OperationPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ParenthesisPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\PercentPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\PowerPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\Ptg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\RangePtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\Ref2DPtgBase.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\Ref3DPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\RefErrorPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\RefNPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\RefPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\RefPtgBase.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ScalarConstantPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\StringPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\SubtractPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\TblPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\TwoDEval.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\UnaryMinusPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\UnaryPlusPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\UnionPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\UnknownPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\PTG\ValueOperatorPtg.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\SharedFormula.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\SheetNameFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\SheetRefEvaluator.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Udf\AggregatingUDFFinder.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Udf\DefaultUDFFinder.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\Udf\UDFFinder.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\UserDefinedFunction.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\WorkbookDependentFormula.cs" />
+    <Compile Include="Excel\NPOI\SS\Formula\WorkbookEvaluator.cs" />
+    <Compile Include="Excel\NPOI\SS\SpreadsheetVersion.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\AutoFilter.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\BorderDiagonal.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\BorderFormatting.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\BorderStyle.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\BuiltinFormats.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Cell.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\CellRange.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\CellStyle.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\CellValue.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Chart.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\AxisCrossBetween.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\AxisCrosses.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\AxisOrientation.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\AxisPosition.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ChartAxis.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ChartAxisFactory.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ChartData.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ChartDataFactory.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ChartLegend.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\LayoutMode.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\LayoutTarget.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\LegendPosition.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ManualLayout.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ManuallyPositionable.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ScatterChartData.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ScatterChartSerie.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Charts\ValueAxis.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\ClientAnchor.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Color.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Comment.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\ComparisonOperator.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\ConditionalFormatting.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\ConditionalFormattingRule.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\CreationHelper.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\DataFormat.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\DataFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\DataValidation.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\DataValidationConstraint.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\DataValidationHelper.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\DateUtil.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Drawing.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\ErrorConstants.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\ExcelStyleDateFormatter.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FillPatternType.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Font.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FontCharset.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FontFamily.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FontFormatting.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FontScheme.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FontUnderline.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Footer.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FormulaError.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\FormulaEvaluator.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Header.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\HeaderFooter.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\HorizontalAlignment.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Hyperlink.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\IndexedColors.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\LineStyle.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Name.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\PageOrder.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\PaperSize.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\PatternFormatting.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Picture.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\PictureData.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\PrintCellComments.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\PrintOrientation.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\PrintSetup.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\RichTextString.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Row.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Shape.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\ShapeTypes.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Sheet.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\SheetConditionalFormatting.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Textbox.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\VerticalAlignment.cs" />
+    <Compile Include="Excel\NPOI\SS\UserModel\Workbook.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\AreaReference.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\CellRangeAddress.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\CellRangeAddress8Bit.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\CellRangeAddressBase.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\CellRangeAddressList.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\CellReference.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\CellUtil.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\Cellwalk\CellHandler.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\Cellwalk\CellWalk.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\Cellwalk\CellWalkContext.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\DataMarker.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\ExpandedDouble.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\Format.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\IEEEDouble.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\MutableFPNumber.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\NormalisedDecimal.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\NumberComparer.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\NumberToTextConverter.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\PaneInformation.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\Region.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\RegionUtil.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\SheetBuilder.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\SheetReferences.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\SheetUtil.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\SSCellRange.cs" />
+    <Compile Include="Excel\NPOI\SS\Util\WorkbookUtil.cs" />
+    <Compile Include="Excel\NPOI\Util\Arrays.cs" />
+    <Compile Include="Excel\NPOI\Util\BigInteger.cs" />
+    <Compile Include="Excel\NPOI\Util\BitField.cs" />
+    <Compile Include="Excel\NPOI\Util\BitFieldFactory.cs" />
+    <Compile Include="Excel\NPOI\Util\BlockingInputStream.cs" />
+    <Compile Include="Excel\NPOI\Util\ByteArrayInputStream.cs" />
+    <Compile Include="Excel\NPOI\Util\ByteBuffer.cs" />
+    <Compile Include="Excel\NPOI\Util\ByteField.cs" />
+    <Compile Include="Excel\NPOI\Util\Character.cs" />
+    <Compile Include="Excel\NPOI\Util\ClassID.cs" />
+    <Compile Include="Excel\NPOI\Util\CloseIgnoringInputStream.cs" />
+    <Compile Include="Excel\NPOI\Util\Collections\EmptyEnumerable.cs" />
+    <Compile Include="Excel\NPOI\Util\Collections\HashSet.cs" />
+    <Compile Include="Excel\NPOI\Util\Collections\ISet.cs" />
+    <Compile Include="Excel\NPOI\Util\Collections\Properties.cs" />
+    <Compile Include="Excel\NPOI\Util\Collections\StringTokenizer.cs" />
+    <Compile Include="Excel\NPOI\Util\CRC32.cs" />
+    <Compile Include="Excel\NPOI\Util\DelayableLittleEndianOutput.cs" />
+    <Compile Include="Excel\NPOI\Util\FixedField.cs" />
+    <Compile Include="Excel\NPOI\Util\HexDump.cs" />
+    <Compile Include="Excel\NPOI\Util\HexRead.cs" />
+    <Compile Include="Excel\NPOI\Util\IntegerField.cs" />
+    <Compile Include="Excel\NPOI\Util\IntList.cs" />
+    <Compile Include="Excel\NPOI\Util\IntMapper.cs" />
+    <Compile Include="Excel\NPOI\Util\IOUtils.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndian.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndianByteArrayInputStream.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndianByteArrayOutputStream.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndianConsts.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndianInput.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndianInputStream.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndianOutput.cs" />
+    <Compile Include="Excel\NPOI\Util\LittleEndianOutputStream.cs" />
+    <Compile Include="Excel\NPOI\Util\LongField.cs" />
+    <Compile Include="Excel\NPOI\Util\LZWDecompresser.cs" />
+    <Compile Include="Excel\NPOI\Util\NullLogger.cs" />
+    <Compile Include="Excel\NPOI\Util\Operator.cs" />
+    <Compile Include="Excel\NPOI\Util\POILogFactory.cs" />
+    <Compile Include="Excel\NPOI\Util\POILogger.cs" />
+    <Compile Include="Excel\NPOI\Util\PushbackStream.cs" />
+    <Compile Include="Excel\NPOI\Util\RecordFormatException.cs" />
+    <Compile Include="Excel\NPOI\Util\RuntimeException.cs" />
+    <Compile Include="Excel\NPOI\Util\ShortField.cs" />
+    <Compile Include="Excel\NPOI\Util\ShortList.cs" />
+    <Compile Include="Excel\NPOI\Util\StringUtil.cs" />
+    <Compile Include="Excel\NPOI\Util\SystemOutLogger.cs" />
+    <Compile Include="Excel\NPOI\Util\TempFile.cs" />
+    <Compile Include="Excel\NPOI\Util\ULongField.cs" />
+    <Compile Include="Html\HtmlParse\HtmlParse.cs" />
+    <Compile Include="Html\SgmlReader\SgmlParser.cs" />
+    <Compile Include="Html\SgmlReader\SgmlReader.cs" />
+    <Compile Include="log4net\Appender\AdoNetAppender.cs" />
+    <Compile Include="log4net\Appender\AnsiColorTerminalAppender.cs" />
+    <Compile Include="log4net\Appender\AppenderCollection.cs" />
+    <Compile Include="log4net\Appender\AppenderSkeleton.cs" />
+    <Compile Include="log4net\Appender\AspNetTraceAppender.cs" />
+    <Compile Include="log4net\Appender\BufferingAppenderSkeleton.cs" />
+    <Compile Include="log4net\Appender\BufferingForwardingAppender.cs" />
+    <Compile Include="log4net\Appender\ColoredConsoleAppender.cs" />
+    <Compile Include="log4net\Appender\ConsoleAppender.cs" />
+    <Compile Include="log4net\Appender\DebugAppender.cs" />
+    <Compile Include="log4net\Appender\EventLogAppender.cs" />
+    <Compile Include="log4net\Appender\FileAppender.cs" />
+    <Compile Include="log4net\Appender\ForwardingAppender.cs" />
+    <Compile Include="log4net\Appender\IAppender.cs" />
+    <Compile Include="log4net\Appender\IBulkAppender.cs" />
+    <Compile Include="log4net\Appender\LocalSyslogAppender.cs" />
+    <Compile Include="log4net\Appender\MemoryAppender.cs" />
+    <Compile Include="log4net\Appender\NetSendAppender.cs" />
+    <Compile Include="log4net\Appender\OutputDebugStringAppender.cs" />
+    <Compile Include="log4net\Appender\RemoteSyslogAppender.cs" />
+    <Compile Include="log4net\Appender\RemotingAppender.cs" />
+    <Compile Include="log4net\Appender\RollingFileAppender.cs" />
+    <Compile Include="log4net\Appender\SmtpAppender.cs" />
+    <Compile Include="log4net\Appender\SmtpPickupDirAppender.cs" />
+    <Compile Include="log4net\Appender\TelnetAppender.cs" />
+    <Compile Include="log4net\Appender\TextWriterAppender.cs" />
+    <Compile Include="log4net\Appender\TraceAppender.cs" />
+    <Compile Include="log4net\Appender\UdpAppender.cs" />
+    <Compile Include="log4net\Config\AliasDomainAttribute.cs" />
+    <Compile Include="log4net\Config\AliasRepositoryAttribute.cs" />
+    <Compile Include="log4net\Config\BasicConfigurator.cs" />
+    <Compile Include="log4net\Config\ConfiguratorAttribute.cs" />
+    <Compile Include="log4net\Config\DomainAttribute.cs" />
+    <Compile Include="log4net\Config\DOMConfigurator.cs" />
+    <Compile Include="log4net\Config\DOMConfiguratorAttribute.cs" />
+    <Compile Include="log4net\Config\Log4NetConfigurationSectionHandler.cs" />
+    <Compile Include="log4net\Config\PluginAttribute.cs" />
+    <Compile Include="log4net\Config\RepositoryAttribute.cs" />
+    <Compile Include="log4net\Config\SecurityContextProviderAttribute.cs" />
+    <Compile Include="log4net\Config\XmlConfigurator.cs" />
+    <Compile Include="log4net\Config\XmlConfiguratorAttribute.cs" />
+    <Compile Include="log4net\Core\CompactRepositorySelector.cs" />
+    <Compile Include="log4net\Core\DefaultRepositorySelector.cs" />
+    <Compile Include="log4net\Core\ErrorCode.cs" />
+    <Compile Include="log4net\Core\ExceptionEvaluator.cs" />
+    <Compile Include="log4net\Core\IAppenderAttachable.cs" />
+    <Compile Include="log4net\Core\IErrorHandler.cs" />
+    <Compile Include="log4net\Core\IFixingRequired.cs" />
+    <Compile Include="log4net\Core\ILogger.cs" />
+    <Compile Include="log4net\Core\ILoggerWrapper.cs" />
+    <Compile Include="log4net\Core\IOptionHandler.cs" />
+    <Compile Include="log4net\Core\IRepositorySelector.cs" />
+    <Compile Include="log4net\Core\ITriggeringEventEvaluator.cs" />
+    <Compile Include="log4net\Core\Level.cs" />
+    <Compile Include="log4net\Core\LevelCollection.cs" />
+    <Compile Include="log4net\Core\LevelEvaluator.cs" />
+    <Compile Include="log4net\Core\LevelMap.cs" />
+    <Compile Include="log4net\Core\LocationInfo.cs" />
+    <Compile Include="log4net\Core\LogException.cs" />
+    <Compile Include="log4net\Core\LoggerManager.cs" />
+    <Compile Include="log4net\Core\LoggerWrapperImpl.cs" />
+    <Compile Include="log4net\Core\LoggingEvent.cs" />
+    <Compile Include="log4net\Core\LogImpl.cs" />
+    <Compile Include="log4net\Core\SecurityContext.cs" />
+    <Compile Include="log4net\Core\SecurityContextProvider.cs" />
+    <Compile Include="log4net\Core\TimeEvaluator.cs" />
+    <Compile Include="log4net\Core\WrapperMap.cs" />
+    <Compile Include="log4net\DateFormatter\AbsoluteTimeDateFormatter.cs" />
+    <Compile Include="log4net\DateFormatter\DateTimeDateFormatter.cs" />
+    <Compile Include="log4net\DateFormatter\IDateFormatter.cs" />
+    <Compile Include="log4net\DateFormatter\Iso8601DateFormatter.cs" />
+    <Compile Include="log4net\DateFormatter\SimpleDateFormatter.cs" />
+    <Compile Include="log4net\Filter\DenyAllFilter.cs" />
+    <Compile Include="log4net\Filter\FilterDecision.cs" />
+    <Compile Include="log4net\Filter\FilterSkeleton.cs" />
+    <Compile Include="log4net\Filter\IFilter.cs" />
+    <Compile Include="log4net\Filter\LevelMatchFilter.cs" />
+    <Compile Include="log4net\Filter\LevelRangeFilter.cs" />
+    <Compile Include="log4net\Filter\LoggerMatchFilter.cs" />
+    <Compile Include="log4net\Filter\MdcFilter.cs" />
+    <Compile Include="log4net\Filter\NdcFilter.cs" />
+    <Compile Include="log4net\Filter\PropertyFilter.cs" />
+    <Compile Include="log4net\Filter\StringMatchFilter.cs" />
+    <Compile Include="log4net\GlobalContext.cs" />
+    <Compile Include="log4net\ILog.cs" />
+    <Compile Include="log4net\Layout\ExceptionLayout.cs" />
+    <Compile Include="log4net\Layout\ILayout.cs" />
+    <Compile Include="log4net\Layout\IRawLayout.cs" />
+    <Compile Include="log4net\Layout\Layout2RawLayoutAdapter.cs" />
+    <Compile Include="log4net\Layout\LayoutSkeleton.cs" />
+    <Compile Include="log4net\Layout\PatternLayout.cs" />
+    <Compile Include="log4net\Layout\Pattern\AppDomainPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\AspNetCachePatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\AspNetContextPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\AspNetPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\AspNetRequestPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\AspNetSessionPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\DatePatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\ExceptionPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\FileLocationPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\FullLocationPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\IdentityPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\LevelPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\LineLocationPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\LoggerPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\MessagePatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\MethodLocationPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\NamedPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\NdcPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\PatternLayoutConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\PropertyPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\RelativeTimePatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\StackTraceDetailPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\StackTracePatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\ThreadPatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\TypeNamePatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\UserNamePatternConverter.cs" />
+    <Compile Include="log4net\Layout\Pattern\UtcDatePatternConverter.cs" />
+    <Compile Include="log4net\Layout\RawLayoutConverter.cs" />
+    <Compile Include="log4net\Layout\RawPropertyLayout.cs" />
+    <Compile Include="log4net\Layout\RawTimeStampLayout.cs" />
+    <Compile Include="log4net\Layout\RawUtcTimeStampLayout.cs" />
+    <Compile Include="log4net\Layout\SimpleLayout.cs" />
+    <Compile Include="log4net\Layout\XMLLayout.cs" />
+    <Compile Include="log4net\Layout\XMLLayoutBase.cs" />
+    <Compile Include="log4net\Layout\XmlLayoutSchemaLog4j.cs" />
+    <Compile Include="log4net\LogicalThreadContext.cs" />
+    <Compile Include="log4net\LogManager.cs" />
+    <Compile Include="log4net\MDC.cs" />
+    <Compile Include="log4net\NDC.cs" />
+    <Compile Include="log4net\ObjectRenderer\DefaultRenderer.cs" />
+    <Compile Include="log4net\ObjectRenderer\IObjectRenderer.cs" />
+    <Compile Include="log4net\ObjectRenderer\RendererMap.cs" />
+    <Compile Include="log4net\Plugin\IPlugin.cs" />
+    <Compile Include="log4net\Plugin\IPluginFactory.cs" />
+    <Compile Include="log4net\Plugin\PluginCollection.cs" />
+    <Compile Include="log4net\Plugin\PluginMap.cs" />
+    <Compile Include="log4net\Plugin\PluginSkeleton.cs" />
+    <Compile Include="log4net\Plugin\RemoteLoggingServerPlugin.cs" />
+    <Compile Include="log4net\Repository\ConfigurationChangedEventArgs.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\DefaultLoggerFactory.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\Hierarchy.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\ILoggerFactory.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\Logger.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\LoggerKey.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\ProvisionNode.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\RootLogger.cs" />
+    <Compile Include="log4net\Repository\Hierarchy\XmlHierarchyConfigurator.cs" />
+    <Compile Include="log4net\Repository\IBasicRepositoryConfigurator.cs" />
+    <Compile Include="log4net\Repository\ILoggerRepository.cs" />
+    <Compile Include="log4net\Repository\IXmlRepositoryConfigurator.cs" />
+    <Compile Include="log4net\Repository\LoggerRepositorySkeleton.cs" />
+    <Compile Include="log4net\ThreadContext.cs" />
+    <Compile Include="log4net\Util\AppenderAttachedImpl.cs" />
+    <Compile Include="log4net\Util\CompositeProperties.cs" />
+    <Compile Include="log4net\Util\ContextPropertiesBase.cs" />
+    <Compile Include="log4net\Util\ConverterInfo.cs" />
+    <Compile Include="log4net\Util\CountingQuietTextWriter.cs" />
+    <Compile Include="log4net\Util\CyclicBuffer.cs" />
+    <Compile Include="log4net\Util\EmptyCollection.cs" />
+    <Compile Include="log4net\Util\EmptyDictionary.cs" />
+    <Compile Include="log4net\Util\FormattingInfo.cs" />
+    <Compile Include="log4net\Util\GlobalContextProperties.cs" />
+    <Compile Include="log4net\Util\LevelMapping.cs" />
+    <Compile Include="log4net\Util\LevelMappingEntry.cs" />
+    <Compile Include="log4net\Util\LogicalThreadContextProperties.cs" />
+    <Compile Include="log4net\Util\LogLog.cs" />
+    <Compile Include="log4net\Util\NativeError.cs" />
+    <Compile Include="log4net\Util\NullDictionaryEnumerator.cs" />
+    <Compile Include="log4net\Util\NullEnumerator.cs" />
+    <Compile Include="log4net\Util\NullSecurityContext.cs" />
+    <Compile Include="log4net\Util\OnlyOnceErrorHandler.cs" />
+    <Compile Include="log4net\Util\OptionConverter.cs" />
+    <Compile Include="log4net\Util\PatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternParser.cs" />
+    <Compile Include="log4net\Util\PatternString.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\AppDomainPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\DatePatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\EnvironmentFolderPathPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\EnvironmentPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\IdentityPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\LiteralPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\NewLinePatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\ProcessIdPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\PropertyPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\RandomStringPatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\UserNamePatternConverter.cs" />
+    <Compile Include="log4net\Util\PatternStringConverters\UtcDatePatternConverter.cs" />
+    <Compile Include="log4net\Util\PropertiesDictionary.cs" />
+    <Compile Include="log4net\Util\PropertyEntry.cs" />
+    <Compile Include="log4net\Util\ProtectCloseTextWriter.cs" />
+    <Compile Include="log4net\Util\QuietTextWriter.cs" />
+    <Compile Include="log4net\Util\ReaderWriterLock.cs" />
+    <Compile Include="log4net\Util\ReadOnlyPropertiesDictionary.cs" />
+    <Compile Include="log4net\Util\ReusableStringWriter.cs" />
+    <Compile Include="log4net\Util\SystemInfo.cs" />
+    <Compile Include="log4net\Util\SystemStringFormat.cs" />
+    <Compile Include="log4net\Util\TextWriterAdapter.cs" />
+    <Compile Include="log4net\Util\ThreadContextProperties.cs" />
+    <Compile Include="log4net\Util\ThreadContextStack.cs" />
+    <Compile Include="log4net\Util\ThreadContextStacks.cs" />
+    <Compile Include="log4net\Util\Transform.cs" />
+    <Compile Include="log4net\Util\TypeConverters\BooleanConverter.cs" />
+    <Compile Include="log4net\Util\TypeConverters\ConversionNotSupportedException.cs" />
+    <Compile Include="log4net\Util\TypeConverters\ConverterRegistry.cs" />
+    <Compile Include="log4net\Util\TypeConverters\EncodingConverter.cs" />
+    <Compile Include="log4net\Util\TypeConverters\IConvertFrom.cs" />
+    <Compile Include="log4net\Util\TypeConverters\IConvertTo.cs" />
+    <Compile Include="log4net\Util\TypeConverters\IPAddressConverter.cs" />
+    <Compile Include="log4net\Util\TypeConverters\PatternLayoutConverter.cs" />
+    <Compile Include="log4net\Util\TypeConverters\PatternStringConverter.cs" />
+    <Compile Include="log4net\Util\TypeConverters\TypeConverter.cs" />
+    <Compile Include="log4net\Util\TypeConverters\TypeConverterAttribute.cs" />
+    <Compile Include="log4net\Util\WindowsSecurityContext.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABFN.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABFN_Group.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_Alternation.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_BinVal.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_CharVal.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_Concatenation.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_DecVal.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_Element.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_HexVal.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_Option.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_ProseVal.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_Repetition.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_Rule.cs" />
+    <Compile Include="LumiSoft.Net\ABNF\ABNF_RuleName.cs" />
+    <Compile Include="LumiSoft.Net\AsyncOP.cs" />
+    <Compile Include="LumiSoft.Net\AsyncOP_State.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_e_Authenticate.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_e_UserInfo.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_Gmail_OAuth1_3leg.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\Auth_HttpDigest.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\Auth_HttpDigest_NonceManager.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_Client.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_Client_CramMd5.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_Client_DigestMd5.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_Client_Login.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_Client_Ntlm.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_Client_Plain.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_Client_XOAuth.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_DigestMD5_Challenge.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_DigestMD5_Response.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_ServerMechanism.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_ServerMechanism_CramMd5.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_ServerMechanism_DigestMd5.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_ServerMechanism_Login.cs" />
+    <Compile Include="LumiSoft.Net\AUTH\AUTH_SASL_ServerMechanism_Plain.cs" />
+    <Compile Include="LumiSoft.Net\BalanceMode.cs" />
+    <Compile Include="LumiSoft.Net\BindInfoProtocol.cs" />
+    <Compile Include="LumiSoft.Net\ByteBuilder.cs" />
+    <Compile Include="LumiSoft.Net\CircleCollection.cs" />
+    <Compile Include="LumiSoft.Net\DNS\Client\DnsServerResponse.cs" />
+    <Compile Include="LumiSoft.Net\DNS\Client\DNS_Client.cs" />
+    <Compile Include="LumiSoft.Net\DNS\Client\DNS_ClientCache.cs" />
+    <Compile Include="LumiSoft.Net\DNS\Client\DNS_ClientException.cs" />
+    <Compile Include="LumiSoft.Net\DNS\Client\DNS_ClientTransaction.cs" />
+    <Compile Include="LumiSoft.Net\DNS\Client\DNS_ClientTransactionState.cs" />
+    <Compile Include="LumiSoft.Net\DNS\Client\_OPCODE.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_QClass.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_QType.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_Query.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_RCode.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_A.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_AAAA.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_CNAME.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_HINFO.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_MX.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_NAPTR.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_NS.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_PTR.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_SOA.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_SPF.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_SRV.cs" />
+    <Compile Include="LumiSoft.Net\DNS\DNS_rr_TXT.cs" />
+    <Compile Include="LumiSoft.Net\ErrorEventHandler.cs" />
+    <Compile Include="LumiSoft.Net\Error_EventArgs.cs" />
+    <Compile Include="LumiSoft.Net\EventArgs.cs" />
+    <Compile Include="LumiSoft.Net\ExceptionEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Client\FTP_Client.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Client\FTP_ClientException.cs" />
+    <Compile Include="LumiSoft.Net\FTP\FTP_ListItem.cs" />
+    <Compile Include="LumiSoft.Net\FTP\FTP_TransferMode.cs" />
+    <Compile Include="LumiSoft.Net\FTP\FTP_t_ReplyLine.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Appe.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Authenticate.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Cdup.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Cwd.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Dele.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_GetDirListing.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_GetFile.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_GetFileSize.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Mkd.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Rmd.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Rnto.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Started.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_e_Stor.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_Server.cs" />
+    <Compile Include="LumiSoft.Net\FTP\Server\FTP_Session.cs" />
+    <Compile Include="LumiSoft.Net\HostEndPoint.cs" />
+    <Compile Include="LumiSoft.Net\HostEntry.cs" />
+    <None Include="LumiSoft.Net\HTTP\Server\HTTP_Server.cs" />
+    <None Include="LumiSoft.Net\HTTP\Server\HTTP_Session.cs" />
+    <Compile Include="LumiSoft.Net\IAsyncOP.cs" />
+    <Compile Include="LumiSoft.Net\ICMP\Icmp.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Client\IMAP_Client.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Client\IMAP_ClientException.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Client\IMAP_Client_CmdPart.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Client\IMAP_Client_CmdPart_Type.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Client\IMAP_Client_e_FetchGetStoreStream.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Client\IMAP_Client_SelectedFolder.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Acl_Entry.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_ACL_Flags.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Flags_SetType.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Mailbox_Encoding.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Namespace_Entry.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Quota_Entry.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_ServerStatus.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Acl.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Bye.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Capability.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Enable.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Exists.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Expunge.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Fetch.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Flags.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_List.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_ListRights.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_LSub.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_MyRights.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Namespace.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Quota.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_QuotaRoot.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Recent.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Search.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_ServerStatus.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_r_u_Status.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Answered.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Bcc.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Before.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Body.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Cc.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Deleted.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Draft.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Flagged.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_From.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Group.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Header.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Keyword.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Lager.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_New.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Not.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Old.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_On.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Or.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Recent.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Seen.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_SentBefore.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_SentOn.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_SentSince.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_SeqSet.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Since.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Smaller.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Subject.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Text.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_To.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Uid.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Unanswered.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Undeleted.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Undraft.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Unflagged.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Unkeyword.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Search_Key_Unseen.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Capabilities.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Body.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_BodyPeek.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_BodyS.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_BodyStructure.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Envelope.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Flags.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_InternalDate.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Rfc822.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Rfc822Header.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Rfc822Size.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Rfc822Text.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_Uid.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_X_GM_MSGID.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_i_X_GM_THRID.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Body.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_BodyS.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_BodyStructure.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Envelope.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Flags.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_InternalDate.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Rfc822.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Rfc822Header.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Rfc822Size.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Rfc822Text.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_Uid.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_X_GM_MSGID.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_Fetch_r_i_X_GM_THRID.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_MsgFlags.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_Alert.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_AppendUid.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_BadCharset.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_Capability.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_CopyUid.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_Parse.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_PermanentFlags.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_ReadOnly.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_ReadWrite.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_TryCreate.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_UidNext.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_UidValidity.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_Unknown.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_orc_Unseen.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_t_SeqSet.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\IMAP_Utils.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Append.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Copy.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_DeleteAcl.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Expunge.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Fetch.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Folder.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_GetAcl.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_GetQuota.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_GetQuotaRoot.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_List.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_ListRights.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Login.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_LSub.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_MessagesInfo.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_MyRights.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Namespace.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Rename.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Search.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Select.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_SetAcl.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Started.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_e_Store.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_Fetch_DataType.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_MessageInfo.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_Server.cs" />
+    <Compile Include="LumiSoft.Net\IMAP\Server\IMAP_Session.cs" />
+    <Compile Include="LumiSoft.Net\IO\Base64.cs" />
+    <Compile Include="LumiSoft.Net\IO\Base64Stream.cs" />
+    <Compile Include="LumiSoft.Net\IO\DataSizeExceededException.cs" />
+    <Compile Include="LumiSoft.Net\IO\FifoBuffer.cs" />
+    <Compile Include="LumiSoft.Net\IO\IncompleteDataException.cs" />
+    <Compile Include="LumiSoft.Net\IO\JunkingStream.cs" />
+    <Compile Include="LumiSoft.Net\IO\LineSizeExceededException.cs" />
+    <Compile Include="LumiSoft.Net\IO\MemoryStreamEx.cs" />
+    <Compile Include="LumiSoft.Net\IO\MultiStream.cs" />
+    <Compile Include="LumiSoft.Net\IO\PartialStream.cs" />
+    <Compile Include="LumiSoft.Net\IO\QuotedPrintableStream.cs" />
+    <Compile Include="LumiSoft.Net\IO\ReadWriteControlledStream.cs" />
+    <Compile Include="LumiSoft.Net\IO\SizeExceededAction.cs" />
+    <Compile Include="LumiSoft.Net\IO\SmartStream.cs" />
+    <Compile Include="LumiSoft.Net\IPBindInfo.cs" />
+    <Compile Include="LumiSoft.Net\KeyValueCollection.cs" />
+    <Compile Include="LumiSoft.Net\Log\LogEntry.cs" />
+    <Compile Include="LumiSoft.Net\Log\LogEntryType.cs" />
+    <Compile Include="LumiSoft.Net\Log\Logger.cs" />
+    <Compile Include="LumiSoft.Net\Log\WriteLogEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_h_AddressList.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_h_DispositionNotificationOptions.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_h_Mailbox.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_h_MailboxList.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_h_Received.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_h_ReturnPath.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_Message.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_t_Address.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_t_AddressList.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_t_Group.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_t_Mailbox.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_t_MailboxList.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_t_TcpInfo.cs" />
+    <Compile Include="LumiSoft.Net\Mail\Mail_Utils.cs" />
+    <Compile Include="LumiSoft.Net\Media\AudioFormat.cs" />
+    <Compile Include="LumiSoft.Net\Media\AudioIn.cs" />
+    <Compile Include="LumiSoft.Net\Media\AudioInDevice.cs" />
+    <Compile Include="LumiSoft.Net\Media\AudioIn_RTP.cs" />
+    <Compile Include="LumiSoft.Net\Media\AudioOut.cs" />
+    <Compile Include="LumiSoft.Net\Media\AudioOutDevice.cs" />
+    <Compile Include="LumiSoft.Net\Media\AudioOut_RTP.cs" />
+    <Compile Include="LumiSoft.Net\Media\Codec\Audio\AudioCodec.cs" />
+    <Compile Include="LumiSoft.Net\Media\Codec\Audio\PCMA.cs" />
+    <Compile Include="LumiSoft.Net\Media\Codec\Audio\PCMU.cs" />
+    <Compile Include="LumiSoft.Net\Media\Codec\Codec.cs" />
+    <Compile Include="LumiSoft.Net\Media\WavePlayer.cs" />
+    <Compile Include="LumiSoft.Net\Media\_WaveIn.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Application.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_ApplicationPkcs7Mime.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Audio.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Image.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Message.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MessageDeliveryStatus.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MessageRfc822.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Multipart.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartAlternative.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartDigest.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartEncrypted.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartFormData.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartMixed.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartParallel.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartRelated.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartReport.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_MultipartSigned.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Provider.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_SinglepartBase.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Text.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Unknown.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_b_Video.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_DispositionTypes .cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_EncodedWordEncoding.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_Encoding_EncodedWord.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_Entity.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_EntityCollection.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_Collection.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_ContentDisposition.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_ContentType.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_Parameter.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_ParameterCollection.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_Provider.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_Unparsed.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_h_Unstructured.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_MediaTypes.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_Message.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_Reader.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_TransferEncodings.cs" />
+    <Compile Include="LumiSoft.Net\MIME\MIME_Utils.cs" />
+    <Compile Include="LumiSoft.Net\Net_Utils.cs" />
+    <Compile Include="LumiSoft.Net\NNTP\Client\NNTP_Client.cs" />
+    <Compile Include="LumiSoft.Net\ParseException.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Client\POP3_Client.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Client\POP3_ClientException.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Client\POP3_ClientMessage.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Client\POP3_ClientMessageCollection.cs" />
+    <Compile Include="LumiSoft.Net\POP3\POP3_ExtendedCapabilities.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\AuthUser_EventArgs.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_e_Authenticate.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_e_DeleteMessage.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_e_GetMessagesInfo.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_e_GetMessageStream.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_e_GetTopOfMessage.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_e_Started.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_Server.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_ServerMessage.cs" />
+    <Compile Include="LumiSoft.Net\POP3\Server\POP3_Session.cs" />
+    <Compile Include="LumiSoft.Net\PortRange.cs" />
+    <Compile Include="LumiSoft.Net\Range_long.cs" />
+    <Compile Include="LumiSoft.Net\RTP\Debug\wfrm_RTP_Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LumiSoft.Net\RTP\RTCP_CompoundPacket.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_PacketType.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_APP.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_BYE.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_ReportBlock.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_RR.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_SDES.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_SDES_Chunk.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_SR.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Packet_Unknown.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Report_Receiver.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTCP_Report_Sender.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Address.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Clock.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_MultimediaSession.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Packet.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_PacketEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Participant.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_ParticipantEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Participant_Local.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Participant_Remote.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_PayloadTypes.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_ReceiveStream.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_ReceiveStreamEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_SendStream.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_SendStreamEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Session.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Source.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_SourceEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_SourceState.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Source_Local.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Source_Remote.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_StreamMode.cs" />
+    <Compile Include="LumiSoft.Net\RTP\RTP_Utils.cs" />
+    <Compile Include="LumiSoft.Net\SDP\SDP_Attribute.cs" />
+    <Compile Include="LumiSoft.Net\SDP\SDP_Connection.cs" />
+    <Compile Include="LumiSoft.Net\SDP\SDP_MediaDescription.cs" />
+    <Compile Include="LumiSoft.Net\SDP\SDP_MediaTypes.cs" />
+    <Compile Include="LumiSoft.Net\SDP\SDP_Message.cs" />
+    <Compile Include="LumiSoft.Net\SDP\SDP_Origin.cs" />
+    <Compile Include="LumiSoft.Net\SDP\SDP_Time.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Debug\wfrm_SIP_Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_HeaderField.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_HeaderFieldCollection.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_Message.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_MultiValueHF.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_MVGroupHFCollection.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_OptionTags.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_Parameter.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_ParameterCollection.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_ParseException.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_SingleValueHF.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_SVGroupHFCollection.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_AcceptRange.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ACValue.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_AddressParam.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_AlertParam.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_AuthenticationInfo.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_CallID.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Challenge.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ContactParam.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ContentCoding.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ContentDisposition.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Credentials.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_CSeq.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Directive.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Encoding.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ErrorUri.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Event.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_EventType.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_From.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_HiEntry.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_IdentityInfo.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Info.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Join.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Language.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_LanguageTag.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Method.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_MinSE.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_NameAddress.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_OptionTag.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_RAck.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_RCValue.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ReasonValue.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ReferredBy.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ReferSub.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Replaces.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_RetryAfter.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_RValue.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_SecMechanism.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_SessionExpires.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_SubscriptionState.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_TargetDialog.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Timestamp.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_To.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_Value.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ValueWithParams.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_ViaParm.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_t_WarningValue.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Message\SIP_WarningCodes.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_AuthenticateEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_B2BUA.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_B2BUA_Call.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_ForkingMode.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_Presence.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_Proxy.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_ProxyContext.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_ProxyHandler.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_ProxyMode.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_ProxyTarget.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_Registrar.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_Registration.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_RegistrationBinding.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_RegistrationCollection.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_RegistrationEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Proxy\SIP_RequestContext.cs" />
+    <Compile Include="LumiSoft.Net\SIP\SIP_Utils.cs" />
+    <Compile Include="LumiSoft.Net\SIP\SIP_ValidateRequestEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_ClientTransaction.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Dialog.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_DialogState.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Dialog_Invite.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Dialog_Refer.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Dialog_Subscribe.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Dialog_Usage.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Dialog_Usage_Invite.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Dialog_Usage_Subscribe.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Flow.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Hop.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Methods.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Request.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_RequestLine.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_RequestReceivedEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_RequestSender.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Response.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_ResponseCodes.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_ResponseReceivedEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_ResponseSentEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_ServerTransaction.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Stack.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_StackState.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_StatusCodeType.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_StatusLine.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_TimerConstants.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Transaction.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_TransactionLayer.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_TransactionState.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_Transport.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_TransportException.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_TransportLayer.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_UA_Registration.cs" />
+    <Compile Include="LumiSoft.Net\SIP\Stack\SIP_UA_RegistrationState.cs" />
+    <Compile Include="LumiSoft.Net\SIP\UA\SIP_UA.cs" />
+    <Compile Include="LumiSoft.Net\SIP\UA\SIP_UA_Call.cs" />
+    <Compile Include="LumiSoft.Net\SIP\UA\SIP_UA_CallState.cs" />
+    <Compile Include="LumiSoft.Net\SIP\UA\SIP_UA_Call_EventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Client\SMTP_Client.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Client\SMTP_ClientException.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Relay\Relay_Mode.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Relay\Relay_Queue.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Relay\Relay_QueueItem.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Relay\Relay_Server.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Relay\Relay_Session.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Relay\Relay_SessionCompletedEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Relay\Relay_SmartHost.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_e_Ehlo.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_e_MailFrom.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_e_Message.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_e_MessageStored.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_e_RcptTo.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_e_Started.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_MailFrom.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_RcptTo.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_Reply.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_Server.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\Server\SMTP_Session.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\SMTP_DSN_Notify.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\SMTP_DSN_Ret.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\SMTP_ServiceExtensions.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\SMTP_t_Mailbox.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\SMTP_t_ReplyLine.cs" />
+    <Compile Include="LumiSoft.Net\SMTP\SMTP_Utils.cs" />
+    <None Include="LumiSoft.Net\SNTP\Client\SNTP_Client.cs" />
+    <Compile Include="LumiSoft.Net\SslMode.cs" />
+    <Compile Include="LumiSoft.Net\StringReader.cs" />
+    <Compile Include="LumiSoft.Net\STUN\Client\STUN_Client.cs" />
+    <Compile Include="LumiSoft.Net\STUN\Client\STUN_NetType.cs" />
+    <Compile Include="LumiSoft.Net\STUN\Client\STUN_Result.cs" />
+    <Compile Include="LumiSoft.Net\STUN\Message\STUN_Message.cs" />
+    <Compile Include="LumiSoft.Net\STUN\Message\STUN_MessageType.cs" />
+    <Compile Include="LumiSoft.Net\STUN\Message\STUN_t_ChangeRequest.cs" />
+    <Compile Include="LumiSoft.Net\STUN\Message\STUN_t_ErrorCode.cs" />
+    <Compile Include="LumiSoft.Net\TCP\TCP_Client.cs" />
+    <Compile Include="LumiSoft.Net\TCP\TCP_Server.cs" />
+    <Compile Include="LumiSoft.Net\TCP\TCP_ServerSession.cs" />
+    <Compile Include="LumiSoft.Net\TCP\TCP_ServerSessionEventArgs.cs" />
+    <Compile Include="LumiSoft.Net\TCP\TCP_Session.cs" />
+    <Compile Include="LumiSoft.Net\TCP\TCP_SessionCollection.cs" />
+    <Compile Include="LumiSoft.Net\TextUtils.cs" />
+    <Compile Include="LumiSoft.Net\TimerEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LumiSoft.Net\UDP\UDP_DataReceiver.cs" />
+    <Compile Include="LumiSoft.Net\UDP\UDP_e_PacketReceived.cs" />
+    <Compile Include="LumiSoft.Net\UDP\UDP_Server.cs" />
+    <Compile Include="LumiSoft.Net\UPnP\Client\UPnP_Client.cs" />
+    <Compile Include="LumiSoft.Net\UPnP\NAT\UPnP_NAT_Client.cs" />
+    <Compile Include="LumiSoft.Net\UPnP\NAT\UPnP_NAT_Map.cs" />
+    <Compile Include="LumiSoft.Net\UPnP\UPnP_Device.cs" />
+    <Compile Include="LumiSoft.Net\UPnP\UPnP_Exception.cs" />
+    <Compile Include="LumiSoft.Net\URI\AbsoluteUri.cs" />
+    <Compile Include="LumiSoft.Net\URI\SIP_Uri.cs" />
+    <Compile Include="LumiSoft.Net\URI\TEL_Uri.cs" />
+    <Compile Include="LumiSoft.Net\URI\UriSchemes.cs" />
+    <Compile Include="LumiSoft.Net\vCard\DeliveryAddress.cs" />
+    <Compile Include="LumiSoft.Net\vCard\DeliveryAddressCollection.cs" />
+    <Compile Include="LumiSoft.Net\vCard\DeliveryAddressType_enum.cs" />
+    <Compile Include="LumiSoft.Net\vCard\EmailAddress.cs" />
+    <Compile Include="LumiSoft.Net\vCard\EmailAddressCollection.cs" />
+    <Compile Include="LumiSoft.Net\vCard\EmailAddressType_enum.cs" />
+    <Compile Include="LumiSoft.Net\vCard\Item.cs" />
+    <Compile Include="LumiSoft.Net\vCard\ItemCollection.cs" />
+    <Compile Include="LumiSoft.Net\vCard\Name.cs" />
+    <Compile Include="LumiSoft.Net\vCard\PhoneNumber.cs" />
+    <Compile Include="LumiSoft.Net\vCard\PhoneNumberCollection.cs" />
+    <Compile Include="LumiSoft.Net\vCard\PhoneNumberType_enum.cs" />
+    <Compile Include="LumiSoft.Net\vCard\vCard.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\Client\WebDav_Client.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_MultiStatus.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_p.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_Prop.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_PropStat.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_p_Default.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_p_ResourceType.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_ResourceTypes.cs" />
+    <Compile Include="LumiSoft.Net\WebDav\WebDav_Response.cs" />
+    <Compile Include="LumiSoft.Net\WellKnownPorts.cs" />
+    <Compile Include="LumiSoft.Net\_AsyncResultState.cs" />
+    <Compile Include="LumiSoft.Net\_Debug\BitDebuger.cs" />
+    <Compile Include="LumiSoft.Net\_MD4.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\DnsCache.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_BODY.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_BODY_Entity.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Client_FetchHandler.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Client_Fetch_Body_EArgs.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Client_Fetch_Rfc822_EArgs.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Envelope.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Body.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_BodyPeek.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_BodyS.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_BodyStructure.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Envelope.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Flags.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_InternalDate.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Rfc822.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Rfc822Header.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Rfc822Size.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Rfc822Text.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_Uid.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_X_GM_MSGID.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Fetch_DataItem_X_GM_THRID.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_MessageFlags.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_Response_MyRights.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\IMAP\IMAP_SequenceSet.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\Address.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\AddressList.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\ContentDisposition_enum.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\ContentTransferEncoding_enum.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\GroupAddress.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\HeaderField.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\HeaderFieldCollection.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\HeaderFieldParameter.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\HeaderFieldParameterCollection.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\MailboxAddress.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\MailboxAddressCollection.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\MediaType_enum.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\Mime.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\MimeEntity.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\MimeEntityCollection.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\MimeUtils.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\MIME\ParametizedHeaderField.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\Net_Core.cs" />
+    <Compile Include="LumiSoft.Net\_Obsolete\StreamLineReader.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\AssemblyResource.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\CharDictionary.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\CharUnit.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\CharUnitPredicate.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\ChineseChar.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\HomophoneDictionary.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\HomophoneUnit.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\PinyinDictionary.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\PinyinUnit.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\PinyinUnitPredicate.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\StrokeDictionary.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\StrokeUnit.cs" />
+    <Compile Include="Microsoft\International\Converters\PinYinConverter\StrokeUnitPredicate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwfDotNet.IO\ByteCode\ActionCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionAdd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionAdd2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionAnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionAsciiiToChar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionBitAnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionBitLShift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionBitOr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionBitRShift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionBitURShift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionBitXor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionCall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionCallFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionCallMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionCastOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionCatch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionCharToAscii.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionCloneSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionConstantpool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionDecrement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionDefineLocal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionDefineLocal2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionDelete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionDelete2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionDivide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEndDrag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEndTryBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEndWait.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEndWith.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEnumerate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEnumerate2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEquals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionEquals2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionExtends.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionFinally.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionFunction2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGetMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGetProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGetTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGetUrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGetUrl2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGetVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGotoFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGotoFrame2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGotoLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionGreater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionIf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionImplements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionIncrement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionInitArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionInitObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionInstanceOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionJump.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionLess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionLess2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionMBAsciiToChar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionMBCharToAscii.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionMBStringExtract.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionMBStringLength.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionModulo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionMultiply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionNewMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionNewObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionNextFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionNot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionOr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionPlay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionPop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionPreviousFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionPush.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionPushDuplicate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionPushList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionRandomNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionRemoveSprite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionReturn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionSetMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionSetProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionSetTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionSetTarget2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionSetVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStackSwap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStartDrag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStopSounds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStoreRegister.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStrictEquals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStringAdd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStringEquals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStringExtract.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStringGreater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStringLength.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionStringLess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionSubtract.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionTargetPath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionThrow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionToggleQuality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionToInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionToNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionToString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionTrace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionTry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionTypeOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionWaitForFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionWaitForFrame2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\ActionWith.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\BaseAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\DummyAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\IJump.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\InvalidPushTypeException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\MultiByteAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Actions\UnknownAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\CodeTraverser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\CodeWalker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Compiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\Decompiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\IActionExaminer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ByteCode\InvocationExaminer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Component.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\ComponentCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Dictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Exceptions\DataWriteOverflowException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Exceptions\InvalidImageFormatException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Exceptions\InvalidPixelFormatException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Exceptions\InvalidSwfVersionException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Exceptions\InvalidTagLengthException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Exceptions\UnavailableFontException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Flv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\FlvHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\FlvReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\FlvWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Swc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\SwcReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\SwcWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Swf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\SwfCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\SwfHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\SwfReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\SwfWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\BaseTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\BaseTagCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineBitsJepg2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineBitsJpeg3Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineBitsLossLess2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineBitsLossLessTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineBitsTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineButton2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineButtonCxFormTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineButtonSoundTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineButtonTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineEditTextTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineFont2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineFontInfo2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineFontInfoTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineFontTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineMorphShapeTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineShape2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineShape3Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineShapeTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineSoundTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineSpriteTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineTargetTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineTargetTagContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineText2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineTextTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DefineVideoStreamTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\DoActionTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\EnableDebugger2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\EnableDebuggerTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\EndTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\ExportAssetsTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\FlvAudioTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\FlvBaseTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\FlvBaseTagCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\FlvTagCodeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\FlvVideoTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\FrameLabelTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\IBaseTagContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\IDefineFont.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\ImportAssetsTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\InitActionTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\ISwfSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\JpegTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\PlaceObject2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\PlaceObjectTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\ProtectTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\RecordHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\RemoveObject2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\RemoveObjectTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\ScriptLimitTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\SetBackgroundColorTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\SetTabIndexTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\ShowFrameTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\SoundStreamBlockTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\SoundStreamHead2Tag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\SoundStreamHeadTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\StartSoundTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\TagCodeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\TextRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\Assert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\Bitmap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ButtonCondaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ButtonRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ClipActionRec.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ColorMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\CXForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\CXFormWithAlphaData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\FillStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\GlyphShapesCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\GlyphShapesTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\Gradient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ISizeStruct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\KerningRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\LanguageCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\LineStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\Matrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\MorphFillStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\MorphGradient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\MorphLineStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\Pix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\Rect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\RGBColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ShapeRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ShapeRecordCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ShapeWithStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\ShortCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\Sound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\TextRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\Types\VideoPacket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Tags\VideoFrameTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\BigEndianBitConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\BinaryStringRW.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\BitParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\BufferedBinaryReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\BufferedBinaryWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\EndianBitConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\Endianness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\ImageFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\LittleEndianBitConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwfDotNet.IO\Utils\SimpleHash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Ionic.Zip\BZip2\BitWriter.cs" />
+    <Compile Include="Zip\Ionic.Zip\BZip2\BZip2Compressor.cs" />
+    <Compile Include="Zip\Ionic.Zip\BZip2\BZip2InputStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\BZip2\ParallelBZip2OutputStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\BZip2\Rand.cs" />
+    <Compile Include="Zip\Ionic.Zip\CRC32.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ComHelper.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\EncryptionAlgorithm.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\Events.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\Exceptions.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ExtractExistingFileAction.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\FileSelector.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\OffsetStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\Shared.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\WinZipAes.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipConstants.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipCrypto.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipDirEntry.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipEntry.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipEntry.Extract.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipEntry.Read.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipEntry.Write.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipEntrySource.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipErrorAction.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.AddUpdate.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.Check.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.Events.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.Extract.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.Read.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.Save.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.SaveSelfExtractor.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.Selector.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipFile.x-IEnumerable.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipInputStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipOutputStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zip\ZipSegmentedStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\Deflate.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\DeflateStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\GZipStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\Inflate.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\InfTree.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\Tree.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\Zlib.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\ZlibCodec.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\ZlibConstants.cs" />
+    <Compile Include="Zip\Ionic.Zip\Zlib\ZlibStream.cs" />
+    <Compile Include="Zip\SharpZipLib\BZip2\BZip2.cs" />
+    <Compile Include="Zip\SharpZipLib\BZip2\BZip2Constants.cs" />
+    <Compile Include="Zip\SharpZipLib\BZip2\BZip2Exception.cs" />
+    <Compile Include="Zip\SharpZipLib\BZip2\BZip2InputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Checksums\Adler32.cs" />
+    <Compile Include="Zip\SharpZipLib\Checksums\CRC32.cs" />
+    <Compile Include="Zip\SharpZipLib\Checksums\IChecksum.cs" />
+    <Compile Include="Zip\SharpZipLib\Checksums\StrangeCRC.cs" />
+    <Compile Include="Zip\SharpZipLib\Core\FileSystemScanner.cs" />
+    <Compile Include="Zip\SharpZipLib\Core\INameTransform.cs" />
+    <Compile Include="Zip\SharpZipLib\Core\IScanFilter.cs" />
+    <Compile Include="Zip\SharpZipLib\Core\NameFilter.cs" />
+    <Compile Include="Zip\SharpZipLib\Core\PathFilter.cs" />
+    <Compile Include="Zip\SharpZipLib\Core\StreamUtils.cs" />
+    <Compile Include="Zip\SharpZipLib\Core\WindowsPathUtils.cs" />
+    <Compile Include="Zip\SharpZipLib\Encryption\PkzipClassic.cs" />
+    <Compile Include="Zip\SharpZipLib\Encryption\ZipAESStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Encryption\ZipAESTransform.cs" />
+    <Compile Include="Zip\SharpZipLib\GZip\GZIPConstants.cs" />
+    <Compile Include="Zip\SharpZipLib\GZip\GZipException.cs" />
+    <Compile Include="Zip\SharpZipLib\GZip\GzipInputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\GZip\GzipOutputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Lzw\LzwConstants.cs" />
+    <Compile Include="Zip\SharpZipLib\Lzw\LzwException.cs" />
+    <Compile Include="Zip\SharpZipLib\Lzw\LzwInputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\SharpZipBaseException.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\InvalidHeaderException.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\TarArchive.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\TarBuffer.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\TarEntry.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\TarException.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\TarHeader.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\TarInputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Tar\TarOutputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\ZIPPER.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\Deflater.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\Inflater.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\FastZip.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\IEntryFactory.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\WindowsNameTransform.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipConstants.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipEntry.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipEntryFactory.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipException.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipExtraData.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipFile.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipHelperStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipInputStream.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipNameTransform.cs" />
+    <Compile Include="Zip\SharpZipLib\Zip\ZipOutputStream.cs" />
+    <None Include="Shove.pfx" />
+    <None Include="SwfDotNet.IO\Doc\SwfDotNet.IO.ndoc" />
+    <None Include="SwfDotNet.IO\SwfDotNet.IO.cd" />
+    <None Include="zxing\qrcode\.classpath" />
+    <None Include="zxing\qrcode\.project" />
+    <None Include="zxing\qrcode\.settings\org.eclipse.core.resources.prefs" />
+    <None Include="zxing\qrcode\.settings\org.eclipse.core.runtime.prefs" />
+    <None Include="zxing\qrcode\.settings\org.eclipse.jdt.core.prefs" />
+    <None Include="zxing\qrcode\.settings\org.eclipse.ltk.core.refactoring.prefs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Excel\NPOI\Resources\functionMetadata.txt" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlCommand.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlCommandBuilder.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlConnection.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlConnectionStringBuilder.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlDataAdapter.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlDataReader.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlException.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlHelper.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlParameter.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlParameterCollection.xml" />
+    <Content Include="Database\Connector\MySQL\6.9.6\docs\MySqlTransaction.xml" />
+    <None Include="Database\Connector\MySQL\6.9.6\Properties\keywords.txt" />
+    <EmbeddedResource Include="Database\Connector\MySQL\6.9.6\Properties\ReservedWords.txt" />
+    <Content Include="Zip\Ionic.Zip\Zip\PackResources.vbs" />
+    <EmbeddedResource Include="Database\Connector\MySQL\6.9.6\Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterpriseDT.Net\net\ftp\FTPConnection.resx">
+      <DependentUpon>FTPConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\NPOI\Resource1.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\NPOI\Resource2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Microsoft.International.Converters.PinYinConverter.AssemblyResource.resources" />
+    <EmbeddedResource Include="Properties\Microsoft.International.Converters.PinYinConverter.CharDictionary.resources" />
+    <EmbeddedResource Include="Properties\Microsoft.International.Converters.PinYinConverter.HomophoneDictionary.resources" />
+    <EmbeddedResource Include="Properties\Microsoft.International.Converters.PinYinConverter.PinyinDictionary.resources" />
+    <EmbeddedResource Include="Properties\Microsoft.International.Converters.PinYinConverter.StrokeDictionary.resources" />
+    <None Include="Zip\Ionic.Zip\Zip\Migrated rules for Zip DLL.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Excel\NPOI\HSSF\Dev\" />
+    <Folder Include="LumiSoft.Net\IMAP\Server\old\" />
+    <Folder Include="LumiSoft.Net\_Obsolete\Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

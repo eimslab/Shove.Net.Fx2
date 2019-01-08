@@ -1,0 +1,9 @@
+C:\Shove.Net\Shove.Components\bin\Debug\Shove.Components.dll
+C:\Shove.Net\Shove.Components\bin\Debug\Shove.Components.pdb
+C:\Shove.Net\Shove.Components\obj\Debug\Shove.Database.Connector.MySQL.MySql.Data.Properties.Resources.resources
+C:\Shove.Net\Shove.Components\obj\Debug\EnterpriseDT.Net.Ftp.FTPConnection.resources
+C:\Shove.Net\Shove.Components\obj\Debug\Shove.Excel.NPOI.Resource1.resources
+C:\Shove.Net\Shove.Components\obj\Debug\Shove.Components.dll
+C:\Shove.Net\Shove.Components\obj\Debug\Shove.Components.pdb
+C:\Shove.Net\Shove.Components\obj\Debug\Shove.Excel.NPOI.Resource2.resources
+C:\Shove.Net\Shove.Components\obj\Debug\Shove.Components.csproj.GenerateResource.Cache

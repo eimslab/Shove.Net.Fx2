@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Shove</AssemblyName>
+    <AssemblyOriginatorKeyFile>Shove.pfx</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Shove</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Shove/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Shove.XML</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.IISOle, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Bin\Release\Interop.IISOle.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>microsoft.visualbasic</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite, Version=1.0.97.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Release\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web">
+      <Name>system.web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\DAO\DatabaseAccess.cs" />
+    <Compile Include="Database\Factory\Convert\Model\Database.cs" />
+    <Compile Include="Database\Factory\Convert\Model\Field.cs" />
+    <Compile Include="Database\Factory\Convert\Model\Index.cs" />
+    <Compile Include="Database\Factory\Convert\Model\Table.cs" />
+    <Compile Include="Database\Factory\Convert\Model\View.cs" />
+    <Compile Include="Database\Factory\Convert\MSSQL.cs" />
+    <Compile Include="Database\Factory\Convert\MySQL.cs" />
+    <Compile Include="Database\Factory\Convert\Utility.cs" />
+    <Compile Include="Database\Factory\Factory.cs" />
+    <Compile Include="Database\Factory\FactoryManager.cs" />
+    <Compile Include="Database\Factory\MSSQL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Factory\MySQL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Factory\SQLite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DAO\Oracle.cs" />
+    <Compile Include="Database\Manage\IDatabaseManage.cs" />
+    <Compile Include="Database\Manage\MSSQL.cs" />
+    <Compile Include="Database\Manage\MySQL.cs" />
+    <Compile Include="Database\Persistences\Java\MSSQL.cs" />
+    <Compile Include="Database\Persistences\Java\MySQL.cs" />
+    <Compile Include="Database\Persistences\Java\Oracle.cs" />
+    <Compile Include="Database\Persistences\Java\SQLite.cs" />
+    <Compile Include="Database\Persistences\DotNet\MSSQL.cs" />
+    <Compile Include="Database\Persistences\DotNet\MySQL.cs" />
+    <Compile Include="Database\Persistences\DotNet\Oracle.cs" />
+    <Compile Include="Database\Persistences\DotNet\SQLite.cs" />
+    <Compile Include="Database\DAO\SQLite.cs" />
+    <Compile Include="Drawing\Drawing.cs" />
+    <Compile Include="Drawing\PNGConvertCore\Box.cs" />
+    <Compile Include="Drawing\PNGConvertCore\ColorData.cs" />
+    <Compile Include="Drawing\PNGConvertCore\CubeCut.cs" />
+    <Compile Include="Drawing\PNGConvertCore\LookupData.cs" />
+    <Compile Include="Drawing\PNGConvertCore\Pixel.cs" />
+    <Compile Include="Drawing\PNGConvertCore\QuantizedPalette.cs" />
+    <Compile Include="Drawing\PNGConvertCore\WuQuantizer.cs" />
+    <Compile Include="Drawing\Utility.cs" />
+    <Compile Include="Excel\Excel.cs" />
+    <Compile Include="Excel\ExcelHelper.cs" />
+    <Compile Include="Excel\NPOIExcelHelper.cs" />
+    <Compile Include="Gateways\GeneralRest.cs" />
+    <Compile Include="Gateways\Icp.cs" />
+    <Compile Include="Gateways\SMS.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Informations.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Information\CustomerChatRecord.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Information\ErrorInformation.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Information\FansListInformation.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Information\GroupsInfromation.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Information\UserInformation.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\MenuManager.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Menu\Menu.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Menu\MenuView.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\Message.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ReplyMessage\CustomerServiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ReplyMessage\ImageTextMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ReplyMessage\MusicMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ReplyMessage\TextMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ReplyMessage\VideoMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ReplyMessage\VoiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RepuestGeographicalPositionmMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestEventMessage .cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestImageMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestLinkMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestLocationMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestSendFailureMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestTextMessage.cs.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestVideoMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\RequestMessage\RequestVoiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage\ImageServiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage\ImageTextServiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage\MassImageTextMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage\MusicServiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage\SendVoiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage\TextServiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Message\ServiceMessage\VideoServiceMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\UserMessage.cs" />
+    <Compile Include="Gateways\Weixin\Gongzhong\Utility.cs" />
+    <Compile Include="Gateways\Weixin\Shanghu\Pay.cs" />
+    <Compile Include="Gateways\Weixin\Shanghu\Utility.cs" />
+    <Compile Include="InformationCode\QrCode.cs" />
+    <Compile Include="IO\LogFile.cs" />
+    <Compile Include="IO\Printer\PrintDirect.cs" />
+    <Compile Include="IO\Printer\PrintDirect2.cs" />
+    <Compile Include="IO\Printer\Printer.cs" />
+    <Compile Include="IO\Zip.cs" />
+    <Compile Include="CharsetDetector\Big5Statistics.cs" />
+    <Compile Include="CharsetDetector\BIG5Verifier.cs" />
+    <Compile Include="CharsetDetector\CP1252Verifier.cs" />
+    <Compile Include="CharsetDetector\Detector.cs" />
+    <Compile Include="CharsetDetector\EUCJPStatistics.cs" />
+    <Compile Include="CharsetDetector\EUCJPVerifier.cs" />
+    <Compile Include="CharsetDetector\EUCKRStatistics.cs" />
+    <Compile Include="CharsetDetector\EUCKRVerifier.cs" />
+    <Compile Include="CharsetDetector\EUCSampler.cs" />
+    <Compile Include="CharsetDetector\EUCStatistics.cs" />
+    <Compile Include="CharsetDetector\EUCTWStatistics.cs" />
+    <Compile Include="CharsetDetector\EUCTWVerifier.cs" />
+    <Compile Include="CharsetDetector\GB18030Verifier.cs" />
+    <Compile Include="CharsetDetector\GB2312Statistics.cs" />
+    <Compile Include="CharsetDetector\GB2312Verifier.cs" />
+    <Compile Include="CharsetDetector\HZVerifier.cs" />
+    <Compile Include="CharsetDetector\ICharsetDetectionObserver.cs" />
+    <Compile Include="CharsetDetector\ICharsetDetector.cs" />
+    <Compile Include="CharsetDetector\ISO2022CNVerifier.cs" />
+    <Compile Include="CharsetDetector\ISO2022JPVerifier.cs" />
+    <Compile Include="CharsetDetector\ISO2022KRVerifier.cs" />
+    <Compile Include="CharsetDetector\MyCharsetDetectionObserver.cs" />
+    <Compile Include="CharsetDetector\PSMDetector.cs" />
+    <Compile Include="CharsetDetector\SJISVerifier.cs" />
+    <Compile Include="CharsetDetector\UCS2BEVerifier.cs" />
+    <Compile Include="CharsetDetector\UCS2LEVerifier.cs" />
+    <Compile Include="CharsetDetector\UTF8Verifier.cs" />
+    <Compile Include="CharsetDetector\Verifier.cs" />
+    <Compile Include="Net\FtpManage\FileZillaServer.cs" />
+    <Compile Include="Net\FtpManage\FileZillaServerUser.cs" />
+    <Compile Include="Net\Ftp\Direction.cs" />
+    <Compile Include="Net\Ftp\FtpClient.cs" />
+    <Compile Include="Net\Ftp\FtpFileInfo.cs" />
+    <Compile Include="Net\Ftp\Instruct.cs" />
+    <Compile Include="Net\Ftp\OverrideMode.cs" />
+    <Compile Include="Net\Ftp\Status.cs" />
+    <Compile Include="Net\Ftp\Task.cs" />
+    <Compile Include="Net\Ftp\TaskItem.cs" />
+    <Compile Include="Net\Ftp\TransferEventArgs.cs" />
+    <Compile Include="Net\IIS.cs" />
+    <None Include="Net\Email\POP3.cs" />
+    <None Include="Net\Email\SMTP.cs" />
+    <Compile Include="Net\IIS\AppPoolMethodType.cs" />
+    <Compile Include="Net\IIS\AppPoolType.cs" />
+    <Compile Include="Net\IIS\HostHeader.cs" />
+    <Compile Include="Net\IIS\IISManagement.cs" />
+    <Compile Include="Net\IIS\IISWebServerCollection.cs" />
+    <Compile Include="Net\IIS\IISWebServerState.cs" />
+    <Compile Include="Net\IIS\IISWebServer.cs" />
+    <Compile Include="Net\IIS\IISWebVirtualDir.cs" />
+    <Compile Include="Net\IIS\IISWebVirtualDirCollection.cs" />
+    <Compile Include="Net\StockService\Client.cs" />
+    <Compile Include="Net\StockService\Server.cs" />
+    <Compile Include="Net\StockService\Utility.cs" />
+    <Compile Include="Gateways\OnlinePay\Alipay\Alipay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\Data.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Security\GetSI.cs" />
+    <Compile Include="Security\License.cs" />
+    <Compile Include="Security\NetUser.cs" />
+    <Compile Include="Security\NTFS.cs" />
+    <Compile Include="Security\Ses.cs" />
+    <Compile Include="System\Device\CameraWorker.cs" />
+    <Compile Include="System\DynamicCode\CShap.cs" />
+    <Compile Include="System\Screen.cs" />
+    <Compile Include="Web References\com_shovesoft_icp\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\I3kmSMS_GatewayService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\NewtonServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Cache.cs" />
+    <Compile Include="ControlExt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Convert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DAO\MSSQL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DAO\MySQL.cs" />
+    <Compile Include="Net\Email\Email.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\Encrypt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\File.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Html\HTML.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\IniFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\IPAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\JavaScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\IIS.cs" />
+    <Compile Include="Net\Internet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\SetFileSystemAccessRights.cs" />
+    <Compile Include="System\Processes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Security\CloudSign.cs" />
+    <Compile Include="Web\Security\InjectionInterceptorSettingConfigurationSectionHandler.cs" />
+    <Compile Include="Web\Security\InjectionInterceptorSettingItem.cs" />
+    <Compile Include="Web\Security\InjectionInterceptor.cs" />
+    <Compile Include="Web\Session\Session.cs" />
+    <Compile Include="String.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\SystemInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\Session\SQLServerSession.cs" />
+    <Compile Include="Web\Snapshot\GetImage.cs" />
+    <Compile Include="Web\Snapshot\NativeMethods.cs" />
+    <Compile Include="Web\Snapshot\Snapshot.cs" />
+    <Compile Include="Web\Snapshot\UnsafeNativeMethods.cs" />
+    <Compile Include="Web\Snapshot\WebPageBitmap.cs" />
+    <Compile Include="Web\Snapshot\WebPageSnapshot.cs" />
+    <Compile Include="Web\Utility.cs" />
+    <Compile Include="Web\WebConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\WebServiceCallResult.cs" />
+    <Compile Include="WordSplit\Dictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WordSplit\WordSplit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Xml.cs" />
+    <Compile Include="Byte.cs" />
+    <None Include="Shove.pfx" />
+    <None Include="Web References\com_shovesoft_icp\Gateway.wsdl" />
+    <None Include="Web References\com_shovesoft_icp\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web\Security\InjectionInterceptor.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CLR.Master.txt" />
+    <Content Include="Security\Gsi.asmx.txt" />
+    <None Include="Web References\com_shovesoft_icp\Gateway.disco" />
+    <None Include="Web References\I3kmSMS_GatewayService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\I3kmSMS_GatewayService\sms_gateway.disco" />
+    <None Include="Web References\I3kmSMS_GatewayService\sms_gateway.wsdl" />
+    <None Include="Web References\NewtonServices\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://icp.shovesoft.com/Gateway.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com_shovesoft_icp\</RelPath>
+      <UpdateFromURL>http://icp.shovesoft.com/Gateway.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shove_com_shovesoft_icp_Gateway</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://newton.shovesoft.com/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\NewtonServices\</RelPath>
+      <UpdateFromURL>http://newton.shovesoft.com/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shove_NewtonServices_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://sms.gateway.i3km.com/sms_gateway.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\I3kmSMS_GatewayService\</RelPath>
+      <UpdateFromURL>http://sms.gateway.i3km.com/sms_gateway.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shove_I3kmSMS_GatewayService_sms_gateway</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\NewtonServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\NewtonServices\Service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shove.Components\Shove.Components.csproj">
+      <Project>{DB304EEB-EA2B-4D26-B688-6595B4AFE262}</Project>
+      <Name>Shove.Components</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InformationCode\BarCode\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

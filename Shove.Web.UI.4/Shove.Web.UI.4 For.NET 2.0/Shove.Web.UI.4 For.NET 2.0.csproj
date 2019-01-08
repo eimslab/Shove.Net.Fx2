@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C38AB7E6-A20C-4ADD-B90F-762BAE5525AE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Shove.Web.UI.4 For.NET 2.0</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Shove.Web.UI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Shove.Web.UI.4 For.NET 2.0/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Shove.Web.UI.4 For.NET 2.0.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\Shove.Web.UI.4 For.NET 2.0.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxPro.2, Version=9.2.17.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>system.design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\DataControl\ShoveGridPagerSinglePageQuery.cs" />
+    <Compile Include="Code\DataControl\ShoveDataImage.cs" />
+    <Compile Include="Code\DataControl\ShovePager.cs" />
+    <Compile Include="Code\Label\ShoveDateTimeLabel.cs" />
+    <Compile Include="Code\Public\IniFile.cs" />
+    <Compile Include="Code\Player\ShoveFlashPlayer.cs" />
+    <Compile Include="Code\DataControl\ShoveGridView.cs" />
+    <Compile Include="Code\Player\ShoveImagePlayer.cs" />
+    <Compile Include="Code\Button\ShoveImageButton.cs" />
+    <Compile Include="Code\Button\ShoveLinkButton.cs" />
+    <Compile Include="Code\DataControl\ShovePagerLabel.cs" />
+    <Compile Include="Code\Public\PageChangeEventArgs.cs" />
+    <Compile Include="Code\TabView\ShoveTabPage.cs" />
+    <Compile Include="Code\TabView\ShoveTabPageCollectionEditor.cs" />
+    <Compile Include="Code\TabView\ShoveTabPagesCollection.cs" />
+    <Compile Include="Code\TabView\ShoveTabSelectionChangingEventArgs.cs" />
+    <Compile Include="Code\TabView\ShoveTabView.cs" />
+    <Compile Include="Code\TabView\ShoveTabViewDesigner.cs" />
+    <Compile Include="Code\WebPart2\Compares\ShovePart2CompareID.cs" />
+    <Compile Include="Code\WebPart2\Compares\ShovePart2CompareTop.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attribute.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2AttributeCollections.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_Boolean.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_BorderStyle.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_Color.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_Enum.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_FontName.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_HAlign.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_Image.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_Int.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_PageNavigate.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_Text.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2Attributes\ShovePart2Attribute_VAlign.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\WebPart2\ShovePart2BasePageRun.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\WebPart2\ShovePart2File.cs" />
+    <Compile Include="Code\WebPart2\ShovePart2UserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\WebPart2\ShovePart2UserControlContentType.cs" />
+    <Compile Include="Code\WebPart\Compares\ShoveWebPartCompareID.cs" />
+    <Compile Include="Code\WebPart\Compares\ShoveWebPartCompareTop.cs" />
+    <Compile Include="Code\WebPart\ShoveWebPartBasePageRun.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\WebPart\ShoveWebPartFile.cs" />
+    <Compile Include="Code\WebPart\ShoveWebPartUserControlContentType.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_Boolean.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_Enum.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_FontName.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_HAlign.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_Int.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_BorderStyle.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_VAlign.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_Image.cs" />
+    <Compile Include="Code\WebPart\ShoveWebPart.cs" />
+    <Compile Include="Code\Input\ShovePasswordTextBox.cs" />
+    <Compile Include="Code\Input\ShoveProvinceCityInput.cs" />
+    <Compile Include="Code\DataControl\ShoveTreeView.cs" />
+    <Compile Include="Code\WebPart\ShoveWebPartAttribute.cs" />
+    <Compile Include="Code\WebPart\ShoveWebPartBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\WebPart\ShoveWebPartAttributeCollections.cs" />
+    <Compile Include="Code\WebPart\ShoveWebPartUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_Text.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_Color.cs" />
+    <Compile Include="Code\WebPart\WebPartAttributes\ShoveWebPartAttribute_PageNavigate.cs" />
+    <Compile Include="Page\BuildDataImage.aspx.cs">
+      <DependentUpon>BuildDataImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\BuildImage.aspx.cs">
+      <DependentUpon>BuildImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\JavaScript\ShoveAddFavorite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Input\ShoveCheckCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Button\ShoveConfirmButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Counter\ShoveCounter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\DataControl\ShoveDataList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Label\ShoveDateLable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\DataControl\ShoveGridPager.cs" />
+    <Compile Include="Code\JavaScript\ShoveSetHomePage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Public\PublicFunction.cs" />
+    <Compile Include="Page\CopyPage.aspx.cs">
+      <DependentUpon>CopyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ImageLibrary.aspx.cs">
+      <DependentUpon>ImageLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2AddNewPage.aspx.cs">
+      <DependentUpon>ShovePart2AddNewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2Attributes.aspx.cs">
+      <DependentUpon>ShovePart2Attributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2License.aspx.cs">
+      <DependentUpon>ShovePart2License.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2LoadLayout.aspx.cs">
+      <DependentUpon>ShovePart2LoadLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2PageList.aspx.cs">
+      <DependentUpon>ShovePart2PageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2RestorePageLayout.aspx.cs">
+      <DependentUpon>ShovePart2RestorePageLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2UserControlLibrary.aspx.cs">
+      <DependentUpon>ShovePart2UserControlLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShovePart2_AscxAttribute.aspx.cs">
+      <DependentUpon>ShovePart2_AscxAttribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShoveWebPartAddNewPage.aspx.cs">
+      <DependentUpon>ShoveWebPartAddNewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShoveWebPartAttributes.aspx.cs">
+      <DependentUpon>ShoveWebPartAttributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShoveWebPartLicense.aspx.cs">
+      <DependentUpon>ShoveWebPartLicense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShoveWebPartPageList.aspx.cs">
+      <DependentUpon>ShoveWebPartPageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShoveWebPartRestorePageLayout.aspx.cs">
+      <DependentUpon>ShoveWebPartRestorePageLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShoveWebPartUserControlLibrary.aspx.cs">
+      <DependentUpon>ShoveWebPartUserControlLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ShoveWebPart_AscxAttribute.aspx.cs">
+      <DependentUpon>ShoveWebPart_AscxAttribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\SiteLayoutManager.aspx.cs">
+      <DependentUpon>SiteLayoutManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\UpLoadStyle.aspx.cs">
+      <DependentUpon>UpLoadStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ShoveFlashPlayer.bmp" />
+    <EmbeddedResource Include="ShoveDateTimeLabel.bmp" />
+    <EmbeddedResource Include="ShoveProvinceCityInput.bmp" />
+    <EmbeddedResource Include="ShovePasswordTextBox.bmp" />
+    <EmbeddedResource Include="ShoveGridView.bmp" />
+    <EmbeddedResource Include="ShoveTreeView.bmp" />
+    <EmbeddedResource Include="ShoveTabView.bmp" />
+    <EmbeddedResource Include="ShoveWebPart.bmp" />
+    <EmbeddedResource Include="ShoveImagePlayer.bmp" />
+    <Content Include="bin\Release\AjaxPro.2.dll" />
+    <Content Include="bin\Release\ShoveWebUI_client\Data\ProvinceCity.xml" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\ApplyToAll.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\botton_bg.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\botton_bg_2.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Close.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\0.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\1.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\2.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\3.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\4.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\5.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\6.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\7.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\8.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Counter\9.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\DesignerMenuClose.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\DesignerMenuOpen.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Designer_bg.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\dian_1.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\dian_2.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Edit.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\img_search.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\KeyBoard.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\KeyBoard2.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\left_1.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\left_2.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\left_bg_2.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\left_bottom.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\left_top.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Lock.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\NoImage.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\pic_botton_1.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\pic_botton_2.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\pic_botton_3.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\pic_botton_4.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\pic_botton_5.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\Pixviewer.swf" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\PixviewerYellow.swf" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\shuoming.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\ToBackground.gif" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\top_bg.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\top_botton_1.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\top_botton_2.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\top_botton_3.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\top_botton_4.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Images\top_botton_5.jpg" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\BuildDataImage.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\BuildImage.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\CopyPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="bin\Release\ShoveWebUI_client\Page\Download.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ImageLibrary.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2AddNewPage.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2Attributes.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2Attributes.htm" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2License.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2LoadLayout.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2PageList.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2RestorePageLayout.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2UserControlLibrary.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2_AscxAttribute.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePart2_AscxAttribute.htm" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShovePasswordTextBox.htm" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPartAddNewPage.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPartAttributes.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPartAttributes.htm" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPartLicense.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPartPageList.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPartRestorePageLayout.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPartUserControlLibrary.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPart_AscxAttribute.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\ShoveWebPart_AscxAttribute.htm" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\SiteLayoutManager.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Page\UpLoadStyle.aspx" />
+    <Content Include="bin\Release\ShoveWebUI_client\Style\0.css" />
+    <Content Include="bin\Release\ShoveWebUI_client\Style\css.css" />
+    <Content Include="Data\ProvinceCity.xml" />
+    <Content Include="Images\ApplyToAll.gif" />
+    <Content Include="Images\botton_bg.gif" />
+    <Content Include="Images\botton_bg_2.gif" />
+    <Content Include="Images\Close.gif" />
+    <Content Include="Images\Counter\0.gif" />
+    <Content Include="Images\Counter\1.gif" />
+    <Content Include="Images\Counter\2.gif" />
+    <Content Include="Images\Counter\3.gif" />
+    <Content Include="Images\Counter\4.gif" />
+    <Content Include="Images\Counter\5.gif" />
+    <Content Include="Images\Counter\6.gif" />
+    <Content Include="Images\Counter\7.gif" />
+    <Content Include="Images\Counter\8.gif" />
+    <Content Include="Images\Counter\9.gif" />
+    <Content Include="Images\Close.gif" />
+    <Content Include="Images\DesignerMenuClose.gif" />
+    <Content Include="Images\DesignerMenuOpen.gif" />
+    <Content Include="Images\Designer_bg.gif" />
+    <Content Include="Images\Edit.gif" />
+    <Content Include="Images\dian_1.jpg" />
+    <Content Include="Images\dian_2.jpg" />
+    <Content Include="Images\img_search.jpg" />
+    <Content Include="Images\KeyBoard2.gif" />
+    <Content Include="Images\left_1.jpg" />
+    <Content Include="Images\left_2.jpg" />
+    <Content Include="Images\left_bg_2.jpg" />
+    <Content Include="Images\left_bottom.jpg" />
+    <Content Include="Images\left_top.jpg" />
+    <Content Include="Images\Lock.gif" />
+    <Content Include="Images\pic_botton_1.jpg" />
+    <Content Include="Images\ToBackground.gif" />
+    <Content Include="Images\top_bg.jpg" />
+    <Content Include="Images\top_botton_1.jpg" />
+    <Content Include="Images\top_botton_2.jpg" />
+    <Content Include="Images\top_botton_3.jpg" />
+    <Content Include="Images\pic_botton_2.jpg" />
+    <Content Include="Images\pic_botton_3.jpg" />
+    <Content Include="Images\pic_botton_4.jpg" />
+    <Content Include="Images\pic_botton_5.jpg" />
+    <Content Include="Images\shuoming.jpg" />
+    <Content Include="Images\Edit.gif" />
+    <Content Include="Images\KeyBoard.gif" />
+    <Content Include="Images\NoImage.jpg" />
+    <Content Include="Images\Pixviewer.swf" />
+    <Content Include="Images\PixviewerYellow.swf" />
+    <EmbeddedResource Include="Menu.bmp" />
+    <Content Include="Images\top_botton_4.jpg" />
+    <Content Include="Images\top_botton_5.jpg" />
+    <Content Include="Page\BuildDataImage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\BuildImage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\CopyPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\Download.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\ImageLibrary.aspx">
+    </Content>
+    <Content Include="Page\ShovePart2AddNewPage.aspx" />
+    <Content Include="Page\ShovePart2Attributes.aspx" />
+    <Content Include="Page\ShovePart2Attributes.htm" />
+    <Content Include="Page\ShovePart2License.aspx" />
+    <Content Include="Page\ShovePart2LoadLayout.aspx" />
+    <Content Include="Page\ShovePart2PageList.aspx" />
+    <Content Include="Page\ShovePart2RestorePageLayout.aspx" />
+    <Content Include="Page\ShovePart2UserControlLibrary.aspx" />
+    <Content Include="Page\ShovePart2_AscxAttribute.aspx" />
+    <Content Include="Page\ShovePart2_AscxAttribute.htm" />
+    <Content Include="Page\ShovePasswordTextBox.htm" />
+    <Content Include="Page\ShoveWebPartAddNewPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\ShoveWebPartAttributes.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\ShoveWebPartAttributes.htm" />
+    <Content Include="Page\ShoveWebPartLicense.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\ShoveWebPartPageList.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\ShoveWebPartRestorePageLayout.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\ShoveWebPartUserControlLibrary.aspx">
+    </Content>
+    <Content Include="Page\ShoveWebPart_AscxAttribute.aspx">
+    </Content>
+    <Content Include="Page\ShoveWebPart_AscxAttribute.htm" />
+    <Content Include="Page\SiteLayoutManager.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Page\UpLoadStyle.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <EmbeddedResource Include="Script\ShoveWebPartDesigning.js" />
+    <EmbeddedResource Include="ShoveGridPagerSinglePageQuery.bmp" />
+    <EmbeddedResource Include="ShovePager.bmp" />
+    <EmbeddedResource Include="Script\ShovePart2.js" />
+    <EmbeddedResource Include="Script\ShovePart2Designing.js" />
+    <EmbeddedResource Include="Script\ShovePart2DesignMenu.js" />
+    <EmbeddedResource Include="ShovePart2.bmp" />
+    <Content Include="Style\0.css" />
+    <Content Include="Style\css.css" />
+    <EmbeddedResource Include="Script\ShoveWebPartDesignMenu.js" />
+    <EmbeddedResource Include="Script\ShoveDateTimeLabel.js" />
+    <EmbeddedResource Include="Script\ShoveFlashPlayer.js" />
+    <EmbeddedResource Include="Script\ShoveImagePlayer.js" />
+    <EmbeddedResource Include="Script\ShovePagerLabel.js" />
+    <EmbeddedResource Include="Script\ShoveWebPart.js" />
+    <EmbeddedResource Include="Script\ShovePasswordTextBox.js" />
+    <EmbeddedResource Include="Script\ShoveProvinceCityInput.js" />
+    <EmbeddedResource Include="Script\ShoveShared.js" />
+    <EmbeddedResource Include="Script\ShoveTabView.js" />
+    <EmbeddedResource Include="ShoveImageButton.bmp" />
+    <EmbeddedResource Include="ShoveLinkButton.bmp" />
+    <EmbeddedResource Include="ShovePagerLabel.bmp" />
+    <EmbeddedResource Include="ShoveDataImage.bmp" />
+    <EmbeddedResource Include="ShoveGridPager.bmp" />
+    <EmbeddedResource Include="ShoveAddFavorite.bmp" />
+    <EmbeddedResource Include="ShoveCheckCode.bmp" />
+    <EmbeddedResource Include="ShoveConfirmButton.bmp" />
+    <EmbeddedResource Include="ShoveCounter.bmp" />
+    <EmbeddedResource Include="ShoveDataList.bmp" />
+    <EmbeddedResource Include="ShoveDateLable.bmp" />
+    <EmbeddedResource Include="ShoveSetHomePage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\ShoveWebUI_client\Data\ShovePart2.UserControls.ini" />
+    <None Include="bin\Release\ShoveWebUI_client\Data\ShoveWebPart.UserControls.ini" />
+    <None Include="Data\ShovePart2.UserControls.ini" />
+    <None Include="Data\ShoveWebPart.UserControls.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

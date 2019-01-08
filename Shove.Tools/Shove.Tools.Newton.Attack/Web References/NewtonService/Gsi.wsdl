@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Go">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ot" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cmd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sign" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GoSoapIn">
+    <wsdl:part name="parameters" element="tns:Go" />
+  </wsdl:message>
+  <wsdl:message name="GoSoapOut">
+    <wsdl:part name="parameters" element="tns:GoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GoHttpGetIn">
+    <wsdl:part name="ot" type="s:string" />
+    <wsdl:part name="cmd" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="Sign" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GoHttpPostIn">
+    <wsdl:part name="ot" type="s:string" />
+    <wsdl:part name="cmd" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="Sign" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="GetSIServiceSoap">
+    <wsdl:operation name="Go">
+      <wsdl:input message="tns:GoSoapIn" />
+      <wsdl:output message="tns:GoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GetSIServiceHttpGet">
+    <wsdl:operation name="Go">
+      <wsdl:input message="tns:GoHttpGetIn" />
+      <wsdl:output message="tns:GoHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GetSIServiceHttpPost">
+    <wsdl:operation name="Go">
+      <wsdl:input message="tns:GoHttpPostIn" />
+      <wsdl:output message="tns:GoHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GetSIServiceSoap" type="tns:GetSIServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Go">
+      <soap:operation soapAction="http://tempuri.org/Go" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetSIServiceSoap12" type="tns:GetSIServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Go">
+      <soap12:operation soapAction="http://tempuri.org/Go" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetSIServiceHttpGet" type="tns:GetSIServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Go">
+      <http:operation location="/Go" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetSIServiceHttpPost" type="tns:GetSIServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Go">
+      <http:operation location="/Go" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetSIService">
+    <wsdl:port name="GetSIServiceSoap" binding="tns:GetSIServiceSoap">
+      <soap:address location="http://www.caihewang.com/Gsi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetSIServiceSoap12" binding="tns:GetSIServiceSoap12">
+      <soap12:address location="http://www.caihewang.com/Gsi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetSIServiceHttpGet" binding="tns:GetSIServiceHttpGet">
+      <http:address location="http://www.caihewang.com/Gsi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetSIServiceHttpPost" binding="tns:GetSIServiceHttpPost">
+      <http:address location="http://www.caihewang.com/Gsi.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getSI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sign" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getSIResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSI2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sign" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSI2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getSI2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getClientSIServiceStatus">
+        <s:complexType />
+      </s:element>
+      <s:element name="getClientSIServiceStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getClientSIServiceStatusResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestSoapHeader">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestSoapHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestSoapHeaderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MySoapHeader" type="tns:MySoapHeader" />
+      <s:complexType name="MySoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getSISoapIn">
+    <wsdl:part name="parameters" element="tns:getSI" />
+  </wsdl:message>
+  <wsdl:message name="getSISoapOut">
+    <wsdl:part name="parameters" element="tns:getSIResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSI2SoapIn">
+    <wsdl:part name="parameters" element="tns:getSI2" />
+  </wsdl:message>
+  <wsdl:message name="getSI2SoapOut">
+    <wsdl:part name="parameters" element="tns:getSI2Response" />
+  </wsdl:message>
+  <wsdl:message name="getClientSIServiceStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:getClientSIServiceStatus" />
+  </wsdl:message>
+  <wsdl:message name="getClientSIServiceStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:getClientSIServiceStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapHeaderSoapIn">
+    <wsdl:part name="parameters" element="tns:TestSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapHeaderSoapOut">
+    <wsdl:part name="parameters" element="tns:TestSoapHeaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapHeaderMySoapHeader">
+    <wsdl:part name="MySoapHeader" element="tns:MySoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="getSI">
+      <wsdl:input message="tns:getSISoapIn" />
+      <wsdl:output message="tns:getSISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSI2">
+      <wsdl:input message="tns:getSI2SoapIn" />
+      <wsdl:output message="tns:getSI2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getClientSIServiceStatus">
+      <wsdl:input message="tns:getClientSIServiceStatusSoapIn" />
+      <wsdl:output message="tns:getClientSIServiceStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestSoapHeader">
+      <wsdl:input message="tns:TestSoapHeaderSoapIn" />
+      <wsdl:output message="tns:TestSoapHeaderSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSI">
+      <soap:operation soapAction="http://tempuri.org/getSI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSI2">
+      <soap:operation soapAction="http://tempuri.org/getSI2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientSIServiceStatus">
+      <soap:operation soapAction="http://tempuri.org/getClientSIServiceStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSoapHeader">
+      <soap:operation soapAction="http://tempuri.org/TestSoapHeader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TestSoapHeaderMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSI">
+      <soap12:operation soapAction="http://tempuri.org/getSI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSI2">
+      <soap12:operation soapAction="http://tempuri.org/getSI2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientSIServiceStatus">
+      <soap12:operation soapAction="http://tempuri.org/getClientSIServiceStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSoapHeader">
+      <soap12:operation soapAction="http://tempuri.org/TestSoapHeader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TestSoapHeaderMySoapHeader" part="MySoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://newton.shovesoft.com/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://newton.shovesoft.com/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

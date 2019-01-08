@@ -1,0 +1,54 @@
+D:\My Work Spaces\Shove.Net\Shove.Components\bin\Release\Shove.Components.XML
+D:\My Work Spaces\Shove.Net\Shove.Components\bin\Release\Shove.Components.dll
+D:\My Work Spaces\Shove.Net\Shove.Components\bin\Release\Shove.Components.pdb
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\ResolveAssemblyReference.cache
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\Shove.Database.Connector.MySQL.MySql.Data.Properties.Resources.resources
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\EnterpriseDT.Net.Ftp.FTPConnection.resources
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource1.resources
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\ResGen.read.1.tlog
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\ResGen.write.1.tlog
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\Shove.Components.dll
+D:\My Work Spaces\Shove.Net\Shove.Components\obj\Release\Shove.Components.pdb
+D:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.XML
+D:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.dll
+D:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.pdb
+D:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Database.Connector.MySQL.MySql.Data.Properties.Resources.resources
+D:\Projects\Shove.Net\Shove.Components\obj\Release\EnterpriseDT.Net.Ftp.FTPConnection.resources
+D:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource1.resources
+D:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.dll
+D:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.pdb
+D:\Projects\Shove.Net\Shove.Components\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\Shove.Net\Shove.Components\obj\Release\ResGen.read.1.tlog
+D:\Projects\Shove.Net\Shove.Components\obj\Release\ResGen.write.1.tlog
+C:\Shove.Net\Shove.Components\bin\Release\Shove.Components.XML
+C:\Shove.Net\Shove.Components\bin\Release\Shove.Components.dll
+C:\Shove.Net\Shove.Components\bin\Release\Shove.Components.pdb
+C:\Shove.Net\Shove.Components\obj\Release\EnterpriseDT.Net.Ftp.FTPConnection.resources
+C:\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource1.resources
+C:\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource2.resources
+C:\Shove.Net\Shove.Components\obj\Release\Shove.Components.csproj.GenerateResource.Cache
+C:\Shove.Net\Shove.Components\obj\Release\Shove.Components.dll
+C:\Shove.Net\Shove.Components\obj\Release\Shove.Components.pdb
+C:\Shove.Net\Shove.Components\obj\Release\Shove.Database.Connector.MySQL._6._9._6.Properties.Resources.resources
+Y:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.XML
+Y:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.dll
+Y:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.pdb
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.csprojResolveAssemblyReference.cache
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Database.Connector.MySQL._6._9._6.Properties.Resources.resources
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\EnterpriseDT.Net.Ftp.FTPConnection.resources
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource1.resources
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource2.resources
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.csproj.GenerateResource.Cache
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.dll
+Y:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.pdb
+Z:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.XML
+Z:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.dll
+Z:\Projects\Shove.Net\Shove.Components\bin\Release\Shove.Components.pdb
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.csprojResolveAssemblyReference.cache
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Database.Connector.MySQL._6._9._6.Properties.Resources.resources
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\EnterpriseDT.Net.Ftp.FTPConnection.resources
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource1.resources
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Excel.NPOI.Resource2.resources
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.csproj.GenerateResource.Cache
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.dll
+Z:\Projects\Shove.Net\Shove.Components\obj\Release\Shove.Components.pdb

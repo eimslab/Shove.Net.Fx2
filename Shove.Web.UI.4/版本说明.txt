@@ -1,0 +1,8 @@
+Shove.Web.UI.4 For.NET 2.0	自由拖拽型 ShoveWebPart，验证码无自身校验，存放在 Session。
+Shove.Web.UI.4.1 For.NET 2.0	自由拖拽型 ShoveWebPart，验证码无自身校验，没有使用脚本资源，直接使用 js 文件。
+
+Shove.Web.UI.4 For Mono 2.0	常规使用，自由拖拽型 ShoveWebPart，验证码有自身校验
+Shove.Web.UI.4 For.NET 3.5	常规使用，自由拖拽型 ShoveWebPart，验证码有自身校验
+Shove.Web.UI.4.2 For.NET 3.5	淘宝版使用，页面布局型 ShoveWebPart，验证码有自身校验
+
+5 个版本均有 ShovePart2 控件，为简化版的页面布局型，淘宝版使用
