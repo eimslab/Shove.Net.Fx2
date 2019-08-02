@@ -666,7 +666,7 @@ namespace Shove
             /// <returns></returns>
             public static bool isMobile(string MobileNumber)
             {
-                return Regex.IsMatch(MobileNumber, @"^(1[3|5|7|8])[\d]{9}$");
+                return Regex.IsMatch(MobileNumber, @"^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\d{8}$");
             }
         }
     }

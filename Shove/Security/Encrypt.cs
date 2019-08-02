@@ -560,10 +560,6 @@ namespace Shove._Security
         /// <returns></returns>
         public static string EncryptString(string CallPassword, string s)
         {
-            /////////////////////////////////////////////
-            new Shove._Security.GetSI().Go();
-            /////////////////////////////////////////////
-
             return EncryptString05(CallPassword, s);
         }
 

@@ -267,10 +267,10 @@ namespace Shove.Database.Manage
             }
 
             DatabaseName = DatabaseName.Trim();
-            if (!DatabaseName.StartsWith("`") || !DatabaseName.EndsWith("`"))
-            {
-                DatabaseName = "`" + DatabaseName + "`";
-            }
+            //if (!DatabaseName.StartsWith("`") || !DatabaseName.EndsWith("`"))
+            //{
+            //    DatabaseName = "`" + DatabaseName + "`";
+            //}
 
             if (!Open(ref ReturnDescription))
             {

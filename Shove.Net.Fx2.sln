@@ -1,0 +1,132 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backup", "Backup", "{235553D5-4CF1-4488-AC1B-474E33F3175E}"
+	ProjectSection(SolutionItems) = preProject
+		Backup\AjaxPro.rar = Backup\AjaxPro.rar
+		Backup\Shove.DAL.10.rar = Backup\Shove.DAL.10.rar
+		Backup\Shove.DAL.20.rar = Backup\Shove.DAL.20.rar
+		Backup\Shove.FTP.UploadContorl.rar = Backup\Shove.FTP.UploadContorl.rar
+		Backup\Shove.Web.UI.2 For.NET 2.0.rar = Backup\Shove.Web.UI.2 For.NET 2.0.rar
+		Backup\Shove.Web.UI.3 For.NET 2.0.rar = Backup\Shove.Web.UI.3 For.NET 2.0.rar
+		Backup\ShoveEL.10.rar = Backup\ShoveEL.10.rar
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{3A7B46E7-D09D-4475-9789-3CCF3DCF41F1}"
+	ProjectSection(SolutionItems) = preProject
+		Shove.Tools\Shove.Tools.AutoRarBackup.rar = Shove.Tools\Shove.Tools.AutoRarBackup.rar
+		Shove.Tools\Shove.Tools.BaiduBrowser.rar = Shove.Tools\Shove.Tools.BaiduBrowser.rar
+		Shove.Tools\Shove.Tools.CaptureScreen.rar = Shove.Tools\Shove.Tools.CaptureScreen.rar
+		Shove.Tools\Shove.Tools.CaptureScreenView.rar = Shove.Tools\Shove.Tools.CaptureScreenView.rar
+		Shove.Tools\Shove.Tools.CleanFiles.rar = Shove.Tools\Shove.Tools.CleanFiles.rar
+		Shove.Tools\Shove.Tools.CopyFileToProjects.rar = Shove.Tools\Shove.Tools.CopyFileToProjects.rar
+		Shove.Tools\Shove.Tools.DBConvert.rar = Shove.Tools\Shove.Tools.DBConvert.rar
+		Shove.Tools\Shove.Tools.FileBackup.rar = Shove.Tools\Shove.Tools.FileBackup.rar
+		Shove.Tools\Shove.Tools.GenConnectionString.rar = Shove.Tools\Shove.Tools.GenConnectionString.rar
+		Shove.Tools\Shove.Tools.HostExchange.rar = Shove.Tools\Shove.Tools.HostExchange.rar
+		Shove.Tools\Shove.Tools.JavaProjectKeygen.rar = Shove.Tools\Shove.Tools.JavaProjectKeygen.rar
+		Shove.Tools\Shove.Tools.Newton.Attack.rar = Shove.Tools\Shove.Tools.Newton.Attack.rar
+		Shove.Tools\Shove.Tools.PatchEditConnectionString.rar = Shove.Tools\Shove.Tools.PatchEditConnectionString.rar
+		Shove.Tools\Shove.Tools.QQPassword.rar = Shove.Tools\Shove.Tools.QQPassword.rar
+		Shove.Tools\Shove.Tools.QrCode.rar = Shove.Tools\Shove.Tools.QrCode.rar
+		Shove.Tools\Shove.Tools.RecordUrlLogReader.rar = Shove.Tools\Shove.Tools.RecordUrlLogReader.rar
+		Shove.Tools\Shove.Tools.RegexTest.rar = Shove.Tools\Shove.Tools.RegexTest.rar
+		Shove.Tools\Shove.Tools.Server.ScaleImage.rar = Shove.Tools\Shove.Tools.Server.ScaleImage.rar
+		Shove.Tools\Shove.Tools.Server.Win2003Security.rar = Shove.Tools\Shove.Tools.Server.Win2003Security.rar
+		Shove.Tools\Shove.Tools.ServerUnzip.rar = Shove.Tools\Shove.Tools.ServerUnzip.rar
+		Shove.Tools\Shove.Tools.SocketServerDemo.rar = Shove.Tools\Shove.Tools.SocketServerDemo.rar
+		Shove.Tools\Shove.Tools.Wave.rar = Shove.Tools\Shove.Tools.Wave.rar
+		Shove.Tools\Shove.Tools.XiniuyunRCZip.rar = Shove.Tools\Shove.Tools.XiniuyunRCZip.rar
+		Shove.Tools\ShoveDatabaseFactoryDemo.rar = Shove.Tools\ShoveDatabaseFactoryDemo.rar
+		Shove.Tools\ShoveNetflowViewer.rar = Shove.Tools\ShoveNetflowViewer.rar
+		Shove.Tools\ShoveWebPart.SiteUpgrade.Tool.rar = Shove.Tools\ShoveWebPart.SiteUpgrade.Tool.rar
+		Shove.Tools\ShoveWebPartLicense.rar = Shove.Tools\ShoveWebPartLicense.rar
+		Shove.Tools\SLS.Security.rar = Shove.Tools\SLS.Security.rar
+		Shove.Tools\英迈思提案阅读器.rar = Shove.Tools\英迈思提案阅读器.rar
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{AC2F44D9-5914-45BF-B354-2839881FBFE3}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\Shove.doc = Documents\Shove.doc
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shove.Web.UI.4", "Shove.Web.UI.4", "{F53C3247-3FAE-435B-9CCB-A03692C1FCE0}"
+	ProjectSection(SolutionItems) = preProject
+		Shove.Web.UI.4\Shove.Web.UI.4 For Mono 2.0.rar = Shove.Web.UI.4\Shove.Web.UI.4 For Mono 2.0.rar
+		Shove.Web.UI.4\Shove.Web.UI.4 For.NET 2.0.rar = Shove.Web.UI.4\Shove.Web.UI.4 For.NET 2.0.rar
+		Shove.Web.UI.4\Shove.Web.UI.4 For.NET 3.5.rar = Shove.Web.UI.4\Shove.Web.UI.4 For.NET 3.5.rar
+		Shove.Web.UI.4\Shove.Web.UI.4.1 For.NET 2.0.rar = Shove.Web.UI.4\Shove.Web.UI.4.1 For.NET 2.0.rar
+		Shove.Web.UI.4\Shove.Web.UI.4.2 For.NET 3.5.rar = Shove.Web.UI.4\Shove.Web.UI.4.2 For.NET 3.5.rar
+		Shove.Web.UI.4\版本说明.txt = Shove.Web.UI.4\版本说明.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{9FB1D816-DABF-439B-81EB-D3E3E0FD35D7}"
+	ProjectSection(SolutionItems) = preProject
+		Examples\Regex_MatchEvaluator.rar = Examples\Regex_MatchEvaluator.rar
+		Examples\Tcp_Socket.rar = Examples\Tcp_Socket.rar
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shove", "Shove\Shove.csproj", "{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shove.DAL", "Shove.DAL\Shove.DAL.csproj", "{076B3858-B112-4143-9103-8379334A9192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shove.Components", "Shove.Components\Shove.Components.csproj", "{DB304EEB-EA2B-4D26-B688-6595B4AFE262}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSites", "WebSites", "{8807198B-C191-40E7-9F50-1129A4796928}"
+	ProjectSection(SolutionItems) = preProject
+		WebSites\Shove.AddressBook.rar = WebSites\Shove.AddressBook.rar
+		WebSites\Shove.InjectionInterceptorTest.rar = WebSites\Shove.InjectionInterceptorTest.rar
+		WebSites\Shove.Newton.rar = WebSites\Shove.Newton.rar
+		WebSites\Shove.WeixinGongzhongTest.rar = WebSites\Shove.WeixinGongzhongTest.rar
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Release|.NET.ActiveCfg = Release|Any CPU
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}.Release|x86.ActiveCfg = Release|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Release|.NET.ActiveCfg = Release|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{076B3858-B112-4143-9103-8379334A9192}.Release|x86.ActiveCfg = Release|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Release|.NET.ActiveCfg = Release|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DB304EEB-EA2B-4D26-B688-6595B4AFE262}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {8872A572-4A2C-4EA9-829F-5FBA2745E251}
+	EndGlobalSection
+EndGlobal

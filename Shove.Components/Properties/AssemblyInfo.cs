@@ -37,6 +37,3 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]
 [assembly: AssemblyKeyName("")]
-
-// Log4Net
-[assembly: log4net.Config.DOMConfigurator(ConfigFileExtension = "log.xml", Watch = true)]

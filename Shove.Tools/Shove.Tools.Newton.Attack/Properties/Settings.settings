@@ -1,9 +1,0 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Shove.Tools.Newton.Attack.Properties" GeneratedClassName="Settings">
-  <Profiles />
-  <Settings>
-    <Setting Name="Shove_Tools_Newton_Attack_NewtonService_GetSIService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://www.caihewang.com/Gsi.asmx</Value>
-    </Setting>
-  </Settings>
-</SettingsFile>

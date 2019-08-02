@@ -1,3 +1,0 @@
-D:\Projects\Shove.Net\AjaxPro\bin\Release\AjaxPro.2.dll
-D:\Projects\Shove.Net\AjaxPro\obj\Release\AjaxPro.csprojResolveAssemblyReference.cache
-D:\Projects\Shove.Net\AjaxPro\obj\Release\AjaxPro.2.dll

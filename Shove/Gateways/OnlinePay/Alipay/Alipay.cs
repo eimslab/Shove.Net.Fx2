@@ -19,9 +19,9 @@ namespace Shove.Alipay
     /// </summary>
     public class Alipay
     {
-        private string PartnerID = "2088101178484721";
-        private string PartnerKey = "438p67m0bkl0xb7wvv96ktcitob42aws";
-        private string ServicesAccount = "alipay_cn_service@yahoo.com"; //英迈思对应的分润账号
+        private string PartnerID = "2088101xxxxxxxxxx";
+        private string PartnerKey = "xxxxxxxxxxxxxxxxxxxxxxxxx";
+        private string ServicesAccount = "alipay_cn_service@yahoo.com";
         private double FormalitiesFees = 0.01;
 
         #region 读写选项相关 MSSQL

@@ -115,9 +115,6 @@
 &lt;/xsl:stylesheet&gt;
 </Value>
     </Setting>
-    <Setting Name="Shove_NewtonServices_Service" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://newton.shovesoft.com/Service.asmx</Value>
-    </Setting>
     <Setting Name="Shove_I3kmSMS_GatewayService_sms_gateway" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://sms.gateway.i3km.com/sms_gateway.asmx</Value>
     </Setting>

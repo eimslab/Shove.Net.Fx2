@@ -3,7 +3,6 @@
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2C06FF39-1352-4E30-BABC-3BA1ACB0B434}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -16,7 +15,6 @@
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
     <RootNamespace>Shove</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
@@ -44,6 +42,7 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <TargetFrameworkProfile />
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -91,8 +90,14 @@
     <DebugType>none</DebugType>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>Build</type>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -115,7 +120,7 @@
       <Name>System.Data</Name>
     </Reference>
     <Reference Include="System.Data.OracleClient" />
-    <Reference Include="System.Data.SQLite, Version=1.0.97.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+    <Reference Include="System.Data.SQLite, Version=1.0.110.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Bin\Release\System.Data.SQLite.dll</HintPath>
     </Reference>
@@ -295,11 +300,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Security\GetSI.cs" />
     <Compile Include="Security\License.cs" />
     <Compile Include="Security\NetUser.cs" />
     <Compile Include="Security\NTFS.cs" />
-    <Compile Include="Security\Ses.cs" />
     <Compile Include="System\Device\CameraWorker.cs" />
     <Compile Include="System\DynamicCode\CShap.cs" />
     <Compile Include="System\Screen.cs" />
@@ -309,11 +312,6 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="Web References\I3kmSMS_GatewayService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
-    <Compile Include="Web References\NewtonServices\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -398,10 +396,11 @@
     <None Include="Web\Security\InjectionInterceptor.config">
       <SubType>Designer</SubType>
     </None>
+    <Compile Include="Gateways\SmsDXT.cs" />
+    <Compile Include="Security\Ses.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CLR.Master.txt" />
-    <Content Include="Security\Gsi.asmx.txt" />
     <None Include="Web References\com_shovesoft_icp\Gateway.disco" />
     <None Include="Web References\I3kmSMS_GatewayService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -409,7 +408,6 @@
     </None>
     <None Include="Web References\I3kmSMS_GatewayService\sms_gateway.disco" />
     <None Include="Web References\I3kmSMS_GatewayService\sms_gateway.wsdl" />
-    <None Include="Web References\NewtonServices\Service.disco" />
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />
@@ -425,17 +423,6 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Shove_com_shovesoft_icp_Gateway</CachedSettingsPropName>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="http://newton.shovesoft.com/Service.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\NewtonServices\</RelPath>
-      <UpdateFromURL>http://newton.shovesoft.com/Service.asmx</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>Shove_NewtonServices_Service</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://sms.gateway.i3km.com/sms_gateway.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
@@ -455,11 +442,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\NewtonServices\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\NewtonServices\Service.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

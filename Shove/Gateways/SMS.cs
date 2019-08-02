@@ -6,7 +6,7 @@ using System.Data;
 namespace Shove.Gateways
 {
     /// <summary>
-    /// sms.gateway.i3km.com 封装的亿美短信网关
+    /// 访问 sms.gateway.i3km.com 封装的短信网关
     /// </summary>
     public class SMS
     {

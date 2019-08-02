@@ -33,18 +33,18 @@ namespace Shove
 
                 switch (cell.CellType)
                 {
-                    case CellType.BLANK:
+                    case CellType.Blank:
                         return string.Empty;
-                    case CellType.BOOLEAN:
+                    case CellType.Boolean:
                         return cell.BooleanCellValue.ToString();
-                    case CellType.ERROR:
+                    case CellType.Error:
                         return cell.ErrorCellValue.ToString();
-                    case CellType.NUMERIC:
+                    case CellType.Numeric:
                         return cell.NumericCellValue.ToString();
                     case CellType.Unknown:
-                    case CellType.STRING:
+                    case CellType.String:
                         return cell.StringCellValue;
-                    case CellType.FORMULA:
+                    case CellType.Formula:
                         try
                         {
                             HSSFFormulaEvaluator e = new HSSFFormulaEvaluator(cell.Sheet.Workbook);
